@@ -37,18 +37,18 @@ Hotkeys:
 
 To change game mode, Hold Home + S1 + S2 and push button below.
 
-- B1 : XBOX Original
-- B2 : PC Engine Mini
-- R2 : Neogeo mini
-- L2 : EgretII mini
+- B1 : Nintendo Switch
+- B2 : XInput
+- R2 : Keyboard
+- L2 : No mode selected
 - B3 : PS3
 - B4 : PS4
-- R1 : PS CLASSIC
-- L1 : Megadrive mini / Astrocity mini
+- R1 : No mode selected
+- L1 : No mode selected
 
-This is just example of modes. You need to configure each button's mode by WebConfig - Settings - Boot Input Modes
+This is default configuration. You need to configure each button's mode by WebConfig - Settings - Boot Input Modes
 
-![image](https://github.com/user-attachments/assets/08856784-5618-4f71-8f1f-db0c0c2a55f8)
+![image](https://github.com/user-attachments/assets/87abef2c-2e2a-4cf5-9b69-8b979ea20da4)
 
 ## What is difference from original GP2040-CE?
 - Supports input by 8BitDo Arcade stick USB dongle(Switch mode)
