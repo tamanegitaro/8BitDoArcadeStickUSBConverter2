@@ -128,7 +128,7 @@ Use 4 screws and finish build.
 - Open configuration - Pin mapping
 - Delete all pin configurations as below and make sure to click save
 
-![image](https://github.com/user-attachments/assets/77f6c4ac-88ac-4161-a6d3-e56ae2a443e5)
+![image](https://github.com/user-attachments/assets/f3be051c-80be-4b48-b9dc-84e51ec5c2e6)
 
 - Open configuration - Peripheral settings
 - Configure I2C and USB port as below and make sure to click save
