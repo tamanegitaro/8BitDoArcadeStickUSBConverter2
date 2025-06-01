@@ -45,6 +45,7 @@ To change game mode, Hold Home + S1 + S2 and push button below.
 - B4 : PS4
 - R1 : PS CLASSIC
 - L1 : Megadrive mini / Astrocity mini
+This is just example of modes. You can change each button's mode by WebConfig - Settings - Boot Input Modes
 
 ![image](https://github.com/user-attachments/assets/08856784-5618-4f71-8f1f-db0c0c2a55f8)
 
@@ -117,6 +118,12 @@ Use 4 screws and finish build.
 
 ![image](https://github.com/user-attachments/assets/f4345e02-e9cd-413c-9ad9-1b506f4f3db4)
 
+- Open settings - Boot Input Modes
+- Choose input mode for each button
+
+![image](https://github.com/user-attachments/assets/5b1002b6-2656-4d90-bd48-fc6ceefabed8)
+
+
 - Open configuration - Pin mapping
 - Delete all pin configurations as below and make sure to click save
 
@@ -132,9 +139,8 @@ Use 4 screws and finish build.
 
 ![image](https://github.com/user-attachments/assets/f96755a7-c6b7-4ad2-8962-634b86d1d05a)
 
-
 - Open configuration - add-on configuration
-- Enable GamePad USB Host configuration and make sure to click save
+- Enable Gamepad USB Host configuration and make sure to click save
 
 ![image](https://github.com/user-attachments/assets/0195a8eb-2c4d-4328-a9ca-8574c9910aa4)
 
