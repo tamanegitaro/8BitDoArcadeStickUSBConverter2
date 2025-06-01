@@ -133,12 +133,12 @@ Use 4 screws and finish build.
 - Open configuration - Peripheral settings
 - Configure I2C and USB port as below and make sure to click save
 
-![image](https://github.com/user-attachments/assets/9aaf8120-6914-4593-a335-56cf9bb46022)
+![image](https://github.com/user-attachments/assets/ccd15258-31ae-4df8-b9f9-1fb742217121)
 
 - Open configuration - Display configuration
 - Enable display and make sure to click save
 
-![image](https://github.com/user-attachments/assets/f96755a7-c6b7-4ad2-8962-634b86d1d05a)
+![image](https://github.com/user-attachments/assets/a5efbef2-d50c-4591-b340-44a9c1a529e5)
 
 - Open configuration - add-on configuration
 - Enable Gamepad USB Host configuration and make sure to click save
