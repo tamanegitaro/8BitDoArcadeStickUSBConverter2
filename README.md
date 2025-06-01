@@ -45,6 +45,7 @@ To change game mode, Hold Home + S1 + S2 and push button below.
 - B4 : PS4
 - R1 : PS CLASSIC
 - L1 : Megadrive mini / Astrocity mini
+
 This is just example of modes. You can change each button's mode by WebConfig - Settings - Boot Input Modes
 
 ![image](https://github.com/user-attachments/assets/08856784-5618-4f71-8f1f-db0c0c2a55f8)
