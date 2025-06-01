@@ -173,7 +173,7 @@ class GamepadUSBHostListener : public USBListener {
         bool _controller_host_enabled;
         void process_ctrlr_report(uint8_t dev_addr, uint8_t const* report, uint16_t len);
 
-        void process_8bitdoarcade_hotkey(void);
+        void process_kbd_hotkey(void);
         
         // Controller report processor functions
         void process_8bitdoarcade(uint8_t const* report);

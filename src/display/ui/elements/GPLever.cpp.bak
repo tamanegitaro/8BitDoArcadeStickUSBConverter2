@@ -46,33 +46,33 @@ void GPLever::draw() {
     bool invertX = ((this->_inputType & GPLever_Mode::GP_LEVER_MODE_INVERT_X) == GPLever_Mode::GP_LEVER_MODE_INVERT_X);
     bool invertY = ((this->_inputType & GPLever_Mode::GP_LEVER_MODE_INVERT_Y) == GPLever_Mode::GP_LEVER_MODE_INVERT_Y);
 
-    // dpad
-    bool upState    = (this->_upMask > -1 ? getProcessedGamepad()->pressedButton((uint16_t)this->_upMask) : getProcessedGamepad()->pressedUp());
-    bool leftState  = (this->_leftMask > -1 ? getProcessedGamepad()->pressedButton((uint16_t)this->_leftMask) : getProcessedGamepad()->pressedLeft());
-    bool downState  = (this->_downMask > -1 ? getProcessedGamepad()->pressedButton((uint16_t)this->_downMask) : getProcessedGamepad()->pressedDown());
-    bool rightState = (this->_rightMask > -1 ? getProcessedGamepad()->pressedButton((uint16_t)this->_rightMask) : getProcessedGamepad()->pressedRight());
+    if (dpadInput) {
+        // dpad
+        bool upState    = (this->_upMask > -1 ? getProcessedGamepad()->pressedButton((uint16_t)this->_upMask) : getProcessedGamepad()->pressedUp());
+        bool leftState  = (this->_leftMask > -1 ? getProcessedGamepad()->pressedButton((uint16_t)this->_leftMask) : getProcessedGamepad()->pressedLeft());
+        bool downState  = (this->_downMask > -1 ? getProcessedGamepad()->pressedButton((uint16_t)this->_downMask) : getProcessedGamepad()->pressedDown());
+        bool rightState = (this->_rightMask > -1 ? getProcessedGamepad()->pressedButton((uint16_t)this->_rightMask) : getProcessedGamepad()->pressedRight());
+        if (upState != downState) {
+            leverY -= upState ? (!invertY ? leverRadius : -leverRadius) : (!invertY ? -leverRadius : leverRadius);
+        }
+        if (leftState != rightState) {
+            leverX -= leftState ? (!invertX ? leverRadius : -leverRadius) : (!invertX ? -leverRadius : leverRadius);
+        }
+    } else if (leftAnalog || rightAnalog) {
+        // analog
+        uint16_t analogX = map((leftAnalog ? getProcessedGamepad()->state.lx : getProcessedGamepad()->state.rx), (!invertX ? 0 : 0xFFFF), (!invertX ? 0xFFFF : 0), 0, 100);
+        uint16_t analogY = map((leftAnalog ? getProcessedGamepad()->state.ly : getProcessedGamepad()->state.ry), (!invertY ? 0 : 0xFFFF), (!invertY ? 0xFFFF : 0), 0, 100);
 
-    // analog left
-    uint16_t analogXleft = getProcessedGamepad()->state.lx;
-    uint16_t analogYleft = getProcessedGamepad()->state.ly;
-    // analog right
-    uint16_t analogXright = getProcessedGamepad()->state.rx;
-    uint16_t analogYright = getProcessedGamepad()->state.ry;
+        uint16_t minX = std::max(0,(baseX - baseRadius));
+        uint16_t maxX = std::min((baseX + baseRadius),128);
+        uint16_t offsetX = (analogX * 0.01) * (maxX - minX);
+        uint16_t minY = std::max(0,(baseY - baseRadius));
+        uint16_t maxY = std::min((baseY + baseRadius),64);
+        uint16_t offsetY = (analogY * 0.01) * (maxY - minY);
 
-    if(analogXleft == 0x0) leftState = 1;
-    if(analogXleft == 0xFFFF) rightState = 1;
-    if(analogYleft == 0x0) upState = 1;
-    if(analogYleft == 0xFFFF) downState = 1;
-    if(analogXright == 0x0) leftState = 1;
-    if(analogXright == 0xFFFF) rightState = 1;
-    if(analogYright == 0x0) upState = 1;
-    if(analogYright == 0xFFFF) downState = 1;
-
-    if (upState != downState) {
-        leverY -= upState ? (!invertY ? leverRadius : -leverRadius) : (!invertY ? -leverRadius : leverRadius);
-    }
-    if (leftState != rightState) {
-        leverX -= leftState ? (!invertX ? leverRadius : -leverRadius) : (!invertX ? -leverRadius : leverRadius);
+        // move lever around
+        leverX = minX + offsetX;
+        leverY = minY + offsetY;
     }
 
     // base

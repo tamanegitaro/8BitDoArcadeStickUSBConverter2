@@ -187,6 +187,41 @@ void GamepadUSBHostListener::process_8bitdoarcade(uint8_t const* report)
     }
 
     process_8bitdoarcade_hotkey();
+
+#if 0
+    sprintf(string_a, "X: %03d ", controller_report.GD_GamePadPointerX);
+    uart_puts(UART_ID, string_a);
+    sprintf(string_a, "Y: %03d ", controller_report.GD_GamePadPointerY);
+    uart_puts(UART_ID, string_a);
+    sprintf(string_a, "Z: %03d ", controller_report.GD_GamePadPointerZ);
+    uart_puts(UART_ID, string_a);
+    sprintf(string_a, "RZ: %03d ", controller_report.GD_GamePadPointerRz);
+    uart_puts(UART_ID, string_a);
+
+    sprintf(string_a, "%02x ", report[0]);
+    uart_puts(UART_ID, string_a);
+    sprintf(string_a, "%02x ", report[1]);
+    uart_puts(UART_ID, string_a);
+    sprintf(string_a, "%02x ", report[2]);
+    uart_puts(UART_ID, string_a);
+    sprintf(string_a, "%02x ", report[3]);
+    uart_puts(UART_ID, string_a);
+    sprintf(string_a, "%02x ", report[4]);
+    uart_puts(UART_ID, string_a);
+    sprintf(string_a, "%02x ", report[5]);
+    uart_puts(UART_ID, string_a);
+    sprintf(string_a, "%02x ", report[6]);
+    uart_puts(UART_ID, string_a);
+    sprintf(string_a, "%02x ", report[7]);
+    uart_puts(UART_ID, string_a);
+    sprintf(string_a, "%02x ", report[8]);
+    uart_puts(UART_ID, string_a);
+    sprintf(string_a, "%02x ", report[9]);
+    uart_puts(UART_ID, string_a);
+    sprintf(string_a, "%02x ", report[10]);
+    uart_puts(UART_ID, string_a);
+    uart_puts(UART_ID, "\n");
+    #endif
 }
 
 void GamepadUSBHostListener::process_ds4(uint8_t const* report)

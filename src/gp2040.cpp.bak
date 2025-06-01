@@ -184,11 +184,6 @@ void GP2040::setup() {
 	// register system event handlers
 	EventManager::getInstance().registerEventHandler(GP_EVENT_STORAGE_SAVE, GPEVENT_CALLBACK(this->handleStorageSave(event)));
 	EventManager::getInstance().registerEventHandler(GP_EVENT_RESTART, GPEVENT_CALLBACK(this->handleSystemReboot(event)));
-
-	if(INPUT_MODE_EGRET == inputMode)
-	{
-		sleep_ms(3500);
-	}
 }
 
 /**

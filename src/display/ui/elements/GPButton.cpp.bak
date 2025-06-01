@@ -112,7 +112,6 @@ void GPButton::draw() {
         }
     }
 
-#if 0
     if (useMask && mapMask != NULL) {
         maskedPins = (pinValues & mapMask->pinMask);
         for (Pin_t pin = 0; pin < (Pin_t)NUM_BANK0_GPIOS; pin++) {
@@ -128,8 +127,6 @@ void GPButton::draw() {
     }
 
     state = (buttonState ? pinState : 0);
-#endif
-    state = buttonState;
 
     // base
     if (this->_shape == GP_SHAPE_ELLIPSE) {
