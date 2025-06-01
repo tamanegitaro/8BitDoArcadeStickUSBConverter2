@@ -16,7 +16,7 @@
   <img src="https://img.shields.io/badge/MiSTer%20latency-0.765%20ms-blue" />
 </p>
 
-## This project is 8BitDo Arcade Stick USB Converter based on GP2040-CE.
+## This project is 8BitDo Arcade Stick USB Converter 2 based on GP2040-CE.
 
 ![GdE4uBRagAAjrmu](https://github.com/user-attachments/assets/8f999c09-cf4b-4efe-b427-e4e0749cce39)
 
@@ -46,10 +46,14 @@ To change game mode, Hold Home + S1 + S2 and push button below.
 - R1 : PS CLASSIC
 - L1 : Megadrive mini / Astrocity mini
 
-![image](https://github.com/user-attachments/assets/06845183-13cd-4b73-b737-164304b0d408)
+![image](https://github.com/user-attachments/assets/08856784-5618-4f71-8f1f-db0c0c2a55f8)
+
+## What is difference from original GP2040-CE?
+- Supports input by 8BitDo Arcade stick USB dongle(Switch mode)
+- Neogeo mini's button alignment is ABCD instead of BOX alignment.
+- Additional 3.5 seconds boot delay when connecting to Egret II mini to prevent stuck in white when connected to 2P side.
 
 ## Known issue
-- Joystick movement will be reflected to OLED animation but button movement will not be reflected to OLED animation. This is issue in Keyboard host add-on so I have reported it to GP2040-CE community. Hope it will be fixed soon.
 - After changing game mode, sometimes need to reboot USB converter and 8BitDo arcade stick to get it recognized.
 
 ## Parts
@@ -96,7 +100,7 @@ Use 4 screws and finish build.
 ![GdE4uBPbsAAGPY7](https://github.com/user-attachments/assets/d93dedf1-becc-4b35-97bc-2e24a5b67b70)
 
 ## How to configure
-- Download build/GP2040-CE_0.7.10_WaveshareZero.uf2
+- Download build/GP2040-CE_0.7.11_WaveshareZero.uf2 from this repository.
 
 - From GP2040-CE Releases, download flash_nuke.uf2 and force_webconfig.uf2
 [https://github.com/OpenStickCommunity/GP2040-CE](https://github.com/OpenStickCommunity/GP2040-CE/releases)
@@ -130,9 +134,9 @@ Use 4 screws and finish build.
 
 
 - Open configuration - add-on configuration
-- Enable Keyboard/Mouse USB Host configuration and make sure to click save
+- Enable GamePad USB Host configuration and make sure to click save
 
-![image](https://github.com/user-attachments/assets/f0e1b5ea-e901-43e2-aefd-481a6b4df219)
+![image](https://github.com/user-attachments/assets/0195a8eb-2c4d-4328-a9ca-8574c9910aa4)
 
 - Click Reboot - Controller and configuration is finished!
 
