@@ -48,7 +48,7 @@ To change game mode, Hold Home + S1 + S2 and push button below.
 
 This is default configuration. You need to configure each button's mode by WebConfig - Settings - Boot Input Modes
 
-![image](https://github.com/user-attachments/assets/87abef2c-2e2a-4cf5-9b69-8b979ea20da4)
+![image](https://github.com/user-attachments/assets/9e7fa37d-f5e5-4ce3-85a8-1a5a61ec6f62)
 
 ## What is difference from original GP2040-CE?
 - Supports input by 8BitDo Arcade stick USB dongle(Switch mode)
