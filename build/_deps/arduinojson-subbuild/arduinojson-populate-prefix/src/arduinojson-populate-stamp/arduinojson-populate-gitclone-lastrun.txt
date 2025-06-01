@@ -1,0 +1,15 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=git
+command=C:/Raspberrypi_Pico/Pico/cmake/bin/cmake.exe;-P;C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/_deps/arduinojson-subbuild/arduinojson-populate-prefix/tmp/arduinojson-populate-gitclone.cmake
+source_dir=C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/_deps/arduinojson-src
+work_dir=C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/_deps
+repository=https://github.com/bblanchon/ArduinoJson.git
+remote=origin
+init_submodules=TRUE
+recurse_submodules=--recursive
+submodules=
+CMP0097=NEW
+
