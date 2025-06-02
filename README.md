@@ -37,18 +37,18 @@ Hotkeys:
 
 To change game mode, Hold Home + S1 + S2 and push button below.
 
-- B1 : XBOX Original
-- B2 : PC Engine Mini
-- R2 : Neogeo mini
-- L2 : EgretII mini
+- B1 : Nintendo Switch
+- B2 : XInput
+- R2 : Keyboard
+- L2 : No mode selected
 - B3 : PS3
 - B4 : PS4
-- R1 : PS CLASSIC
-- L1 : Megadrive mini / Astrocity mini
+- R1 : No mode selected
+- L1 : No mode selected
 
-This is just example of modes. You need to configure each button's mode by WebConfig - Settings - Boot Input Modes
+This is default configuration. You need to configure each button's mode by WebConfig - Settings - Boot Input Modes
 
-![image](https://github.com/user-attachments/assets/08856784-5618-4f71-8f1f-db0c0c2a55f8)
+![image](https://github.com/user-attachments/assets/9e7fa37d-f5e5-4ce3-85a8-1a5a61ec6f62)
 
 ## What is difference from original GP2040-CE?
 - Supports input by 8BitDo Arcade stick USB dongle(Switch mode)
@@ -128,17 +128,17 @@ Use 4 screws and finish build.
 - Open configuration - Pin mapping
 - Delete all pin configurations as below and make sure to click save
 
-![image](https://github.com/user-attachments/assets/77f6c4ac-88ac-4161-a6d3-e56ae2a443e5)
+![image](https://github.com/user-attachments/assets/f3be051c-80be-4b48-b9dc-84e51ec5c2e6)
 
 - Open configuration - Peripheral settings
 - Configure I2C and USB port as below and make sure to click save
 
-![image](https://github.com/user-attachments/assets/9aaf8120-6914-4593-a335-56cf9bb46022)
+![image](https://github.com/user-attachments/assets/ccd15258-31ae-4df8-b9f9-1fb742217121)
 
 - Open configuration - Display configuration
 - Enable display and make sure to click save
 
-![image](https://github.com/user-attachments/assets/f96755a7-c6b7-4ad2-8962-634b86d1d05a)
+![image](https://github.com/user-attachments/assets/a5efbef2-d50c-4591-b340-44a9c1a529e5)
 
 - Open configuration - add-on configuration
 - Enable Gamepad USB Host configuration and make sure to click save
