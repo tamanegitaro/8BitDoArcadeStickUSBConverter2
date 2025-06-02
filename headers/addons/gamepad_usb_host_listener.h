@@ -19,8 +19,8 @@ typedef struct TU_ATTR_PACKED
     int8_t   : 1;                                      // Pad
     uint8_t  BTN_GamePadButton5  : 1;                  // Usage R1
     uint8_t  BTN_GamePadButton6  : 1;                  // Usage R2
-    uint8_t  BTN_GamePadButton7  : 1;                  // Usage S2
-    uint8_t  BTN_GamePadButton8  : 1;                  // Usage S1
+    uint8_t  BTN_GamePadButton7  : 1;                  // Usage S1
+    uint8_t  BTN_GamePadButton8  : 1;                  // Usage S2
     uint8_t  BTN_GamePadButton9  : 1;                  // Usage R3
     uint8_t  BTN_GamePadButton10 : 1;                  // Usage L3
     uint8_t  BTN_GamePadButton11 : 1;                  // Usage A1

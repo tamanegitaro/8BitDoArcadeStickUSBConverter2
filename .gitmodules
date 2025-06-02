@@ -4,3 +4,6 @@
 [submodule "lib/tinyusb"]
 	path = lib/tinyusb
 	url = https://github.com/hathach/tinyusb/
+[submodule "build/_deps/arduinojson-src"]
+    path = build/_deps/arduinojson-src
+    url = https://github.com/bblanchon/ArduinoJson.git

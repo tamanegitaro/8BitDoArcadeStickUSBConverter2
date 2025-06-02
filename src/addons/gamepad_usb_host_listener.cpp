@@ -172,8 +172,8 @@ void GamepadUSBHostListener::process_8bitdoarcade(uint8_t const* report)
         if (controller_report.BTN_GamePadButton4 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_B2;
         if (controller_report.BTN_GamePadButton5 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_R1;
         if (controller_report.BTN_GamePadButton6 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_R2;
-        if (controller_report.BTN_GamePadButton7 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_S2;
-        if (controller_report.BTN_GamePadButton8 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_S1;
+        if (controller_report.BTN_GamePadButton7 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_S1;
+        if (controller_report.BTN_GamePadButton8 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_S2;
         if (controller_report.BTN_GamePadButton9 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_R3;
         if (controller_report.BTN_GamePadButton10 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_L3;
         if (controller_report.BTN_GamePadButton11 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_A1;

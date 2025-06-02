@@ -2023,7 +2023,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : " C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/cmsis C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2040/hardware_regs C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/cmsis C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2040/hardware_regs C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/cmsis C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2040/hardware_regs"
+			"value" : " C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/cmsis C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2040/hardware_regs C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/cmsis C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2040/hardware_regs C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/cmsis C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2040/hardware_regs C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/cmsis C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2040/hardware_regs"
 		},
 		{
 			"name" : "PICO_DOXYGEN_PATHS",

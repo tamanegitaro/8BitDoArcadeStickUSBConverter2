@@ -474,7 +474,7 @@
 				},
 				{
 					"backtrace" : 26,
-					"define" : "PICO_PROGRAM_VERSION_STRING=\"v0.7.11-5-gb2cfe7f-dirty\""
+					"define" : "PICO_PROGRAM_VERSION_STRING=\"v0.7.11-7-gd053529-dirty\""
 				},
 				{
 					"backtrace" : 3,
@@ -1269,7 +1269,7 @@
 				},
 				{
 					"backtrace" : 26,
-					"define" : "PICO_PROGRAM_VERSION_STRING=\"v0.7.11-5-gb2cfe7f-dirty\""
+					"define" : "PICO_PROGRAM_VERSION_STRING=\"v0.7.11-7-gd053529-dirty\""
 				},
 				{
 					"backtrace" : 3,
@@ -2227,7 +2227,7 @@
 				},
 				{
 					"backtrace" : 26,
-					"define" : "PICO_PROGRAM_VERSION_STRING=\"v0.7.11-5-gb2cfe7f-dirty\""
+					"define" : "PICO_PROGRAM_VERSION_STRING=\"v0.7.11-7-gd053529-dirty\""
 				},
 				{
 					"backtrace" : 3,
@@ -2726,15 +2726,11 @@
 		},
 		{
 			"backtrace" : 3,
-			"id" : "nanopb::@d5c6d171ec9eb511f47e"
-		},
-		{
-			"backtrace" : 3,
 			"id" : "lwip-port::@19096ee993ef70886882"
 		},
 		{
 			"backtrace" : 3,
-			"id" : "OneBitDisplay::@3452c874d15faef8fa68"
+			"id" : "nanopb::@d5c6d171ec9eb511f47e"
 		},
 		{
 			"backtrace" : 3,
@@ -2742,15 +2738,19 @@
 		},
 		{
 			"backtrace" : 3,
+			"id" : "OneBitDisplay::@3452c874d15faef8fa68"
+		},
+		{
+			"backtrace" : 3,
 			"id" : "PicoPeripherals::@cf399d6ebaa46a69a5b0"
 		},
 		{
 			"backtrace" : 3,
-			"id" : "WiiExtension::@5a0ebba45c946d486cf6"
+			"id" : "rndis::@e9d3379e4504a7ec489c"
 		},
 		{
 			"backtrace" : 3,
-			"id" : "rndis::@e9d3379e4504a7ec489c"
+			"id" : "WiiExtension::@5a0ebba45c946d486cf6"
 		},
 		{
 			"backtrace" : 3,
