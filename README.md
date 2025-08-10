@@ -1,8 +1,4 @@
-<img width="1919" height="1012" alt="image" src="https://github.com/user-attachments/assets/4c936190-dd9d-459b-b682-669efa8221b6" /><p align="center">
-  <a href="https://gp2040-ce.info">
-    <img alt="GP2040-CE" src="https://raw.githubusercontent.com/OpenStickCommunity/Site/main/docs/assets/images/gp2040-ce-logo.png" />
-  </a>
-</p>
+
 
 <p align="center">
   Multi-Platform Gamepad Firmware for RP2040 customized by tamanegi_taro
