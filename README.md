@@ -32,25 +32,25 @@ You can connect your compatible controllers to Nintendo Switch, PS4, Egret II mi
 <img width="1035" height="742" alt="image" src="https://github.com/user-attachments/assets/a561044f-e041-4b17-addb-9a0aa53a9c96" />
 
 ## Compatible consoles
--Xinput
--Nintendo Switch
--PS3
--Keyboard
--PS4*
--PS5*
--Xbox One*
--Original Xbox*
--Sega Genesis
--Megadrive Mini
--NEOGEO mini
--PC Engine Mini
--CoreGrafx Mini
--Turbografx 16 Mini
--EGRET II mini
--ASTROCITY Mini
--ASTROCITY Mini V
--Playstation Classic
-*Require Authentication Device
+- Xinput
+- Nintendo Switch
+- PS3
+- Keyboard
+- PS4*
+- PS5*
+- Xbox One*
+- Original Xbox*
+- Sega Genesis
+- Megadrive Mini
+- NEOGEO mini
+- PC Engine Mini
+- CoreGrafx Mini
+- Turbografx 16 Mini
+- EGRET II mini
+- ASTROCITY Mini
+- ASTROCITY Mini V
+- Playstation Classic
+* Require Authentication Device
 
 ## How to use
 - Connect 8BitDo arcade stick 2.4G USB dongle or other USB controller to 8BitDo Arcade Stick USB Converter.
