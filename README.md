@@ -85,7 +85,7 @@ For Cyberstick, you can swap Left Stick and Right Lever. Also able to invert Y a
 ## How to change game mode in webconfig
 
 ## How to change game mode mapping in webconfig
-In 8BitDo Arcade stick and Egret II mini Control panel, you can change game mode by pressing button combination. To change game mode, Hold Home + S1 + S2 and push button below.
+In 8BitDo Arcade stick and Egret II mini Control panel, you can change game mode by pressing button combination. To change game mode, Hold A1 + S1 + S2 and push button below.
 
 - B1 : Nintendo Switch
 - B2 : XInput
