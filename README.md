@@ -16,17 +16,24 @@
   <img src="https://img.shields.io/badge/MiSTer%20latency-0.765%20ms-blue" />
 </p>
 
-## This project is 8BitDo Arcade Stick USB Converter 2 based on GP2040-CE.
+## This project is Arcade Stick USB Converter 2 based on GP2040-CE.
+You can connect your compatible device to Nintendo Switch, PS4, Egret II mini, Astrocity mini, Genesis mini and so on using this converter.
 
 ![GdE4uBRagAAjrmu](https://github.com/user-attachments/assets/8f999c09-cf4b-4efe-b427-e4e0749cce39)
 
 ![GdE4uBPbsAAGPY7](https://github.com/user-attachments/assets/d93dedf1-becc-4b35-97bc-2e24a5b67b70)
 
+## Compatible controllers
+- 8BitDo Arcade Stick
+- Cyber Stick USB
+- Egret II mini Control panel
+
 ## How to use
-- Connect 8BitDo arcade stick 2.4G USB dongle to 8BitDo Arcade Stick USB Converter.
-- Connect 8BitDo Arcade Stick USB Converter to console.
-- Set 8BitDo Arcade Stick to Nintendo Switch(S) mode and 2.4G wireless mode.
+- Connect 8BitDo arcade stick 2.4G USB dongle or other USB device to 8BitDo Arcade Stick USB Converter.
+- Connect USB Converter to console.
+- If you are using 8BitDo Arcade Stick, set it's mode to Nintendo Switch(S) mode and 2.4G wireless mode.
 - Wait 4 seconds until 8BitDo Arcade Stick gets recognized by console.
+  
 - For LS/DP/RS switch, make sure to set it as DP for mini console compatibility. You can also use LS/RS for Switch, PSx, and other consoles which utilizes LS/RS.
 - For PS4/PS5 compatibility, you will need USB Hub(Experimental) and PS4/5 Authentication USB dongle.
 
