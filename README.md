@@ -50,7 +50,7 @@ You can connect your compatible controllers to Nintendo Switch, PS4, Egret II mi
 - ASTROCITY Mini
 - ASTROCITY Mini V
 - Playstation Classic
-* Require Authentication Device
+*Require Authentication Device
 
 ## How to use
 - Connect 8BitDo arcade stick 2.4G USB dongle or other USB controller to 8BitDo Arcade Stick USB Converter.
