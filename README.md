@@ -17,11 +17,11 @@
 </p>
 
 ## This project is Arcade Stick USB Converter 2 based on GP2040-CE.
-You can connect your compatible device to Nintendo Switch, PS4, Egret II mini, Astrocity mini, Genesis mini and so on using this converter.
+You can connect your compatible controllers to Nintendo Switch, PS4, Egret II mini, Astrocity mini, Genesis mini and so on using this converter.
 
 ![GdE4uBPbsAAGPY7](https://github.com/user-attachments/assets/d93dedf1-becc-4b35-97bc-2e24a5b67b70)
 
-## Compatible controllers
+## Compatible input controllers
 - 8BitDo Arcade Stick
 <img width="767" height="501" alt="image" src="https://github.com/user-attachments/assets/8bf8ac42-635d-47a5-aaa5-58501682d550" />
 
@@ -31,27 +31,50 @@ You can connect your compatible device to Nintendo Switch, PS4, Egret II mini, A
 - Egret II mini Control panel
 <img width="1035" height="742" alt="image" src="https://github.com/user-attachments/assets/a561044f-e041-4b17-addb-9a0aa53a9c96" />
 
+## Compatible consoles
+-Xinput
+-Nintendo Switch
+-PS3
+-Keyboard
+-PS4*
+-PS5*
+-Xbox One*
+-Original Xbox*
+-Sega Genesis
+-Megadrive Mini
+-NEOGEO mini
+-PC Engine Mini
+-CoreGrafx Mini
+-Turbografx 16 Mini
+-EGRET II mini
+-ASTROCITY Mini
+-ASTROCITY Mini V
+-Playstation Classic
+*Require Authentication Device
+
 ## How to use
-- Connect 8BitDo arcade stick 2.4G USB dongle or other USB device to 8BitDo Arcade Stick USB Converter.
+- Connect 8BitDo arcade stick 2.4G USB dongle or other USB controller to 8BitDo Arcade Stick USB Converter.
 - Connect USB Converter to console.
+- Now your controller and console will be connected and you can play games with your controller.
+*****
+FAQ:
 - If you are using 8BitDo Arcade Stick, set it's mode to Nintendo Switch(S) mode and 2.4G wireless mode.
 - Wait 4 seconds until 8BitDo Arcade Stick gets recognized by console.
-  
 - For LS/DP/RS switch, make sure to set it as DP for mini console compatibility. You can also use LS/RS for Switch, PSx, and other consoles which utilizes LS/RS.
 - For PS4/PS5 compatibility, you will need USB Hub(Experimental) and PS4/5 Authentication USB dongle.
 
-Hotkeys:
-
-- Hold S2 + B3 + B4 5 seconds for Firmware Upgrade mode - Bootsel (Or hold Boot button on RP2040-Zero and press reset button)
-- Hold S1 + B3 + B4 5 seconds for Webconfig
-
-## Pin mappings
+## How to enter configuration mode(Webconfig)
+- Connect your controller to your PC by this USB converter.
+- Hold S1 + B3 + B4 of your controller for 5 seconds and USB converter will enter webconfig mode.
+- Open http://192.168.7.1/
+- In webconfiguration, you can change your compatible console, pin mappings, display configuration and so on.
+- 
+## How to change pin mappings in webconfig
 In Web configuration - GPIO Pin mapping configuration, you can change pin mappings. Connect USB Converter to PC, set USB Converter mode to WebConfig mode, and open http://192.168.7.1/ in Browser. You should be able to find following pin mapping configuration window.
 
 <img width="1919" height="1012" alt="image" src="https://github.com/user-attachments/assets/f3657a64-f232-4ae9-af5f-fb67b2db22ac" />
 
 Pin mapping of controllers are shown as follows. Button name in parentheses is default configuration.
-
 <img width="1330" height="745" alt="image" src="https://github.com/user-attachments/assets/145fb46d-5c4d-4bdb-9248-51e1640d5728" />
 <img width="1330" height="745" alt="image" src="https://github.com/user-attachments/assets/65c898f1-73d5-437a-9b9c-75fb977d1911" />
 <img width="1330" height="745" alt="image" src="https://github.com/user-attachments/assets/21874720-5e3e-4696-ac6d-bc00a14df274" />
@@ -59,8 +82,9 @@ Pin mapping of controllers are shown as follows. Button name in parentheses is d
 For Cyberstick, you can swap Left Stick and Right Lever. Also able to invert Y axis for both Left Lever and Right Stick in addon configuration.
 <img width="1697" height="640" alt="image" src="https://github.com/user-attachments/assets/9547a3c3-c892-4b8b-82dc-e8fdba1dca2f" />
 
+## How to change game mode in webconfig
 
-## Game mode
+## How to change game mode mapping in webconfig
 In 8BitDo Arcade stick and Egret II mini Control panel, you can change game mode by pressing button combination. To change game mode, Hold Home + S1 + S2 and push button below.
 
 - B1 : Nintendo Switch
@@ -72,13 +96,16 @@ In 8BitDo Arcade stick and Egret II mini Control panel, you can change game mode
 - R1 : No mode selected
 - L1 : No mode selected
 
-This is default configuration. You need to configure each button's mode by WebConfig - Settings - Boot Input Modes
+This is just default configuration. You customize this configuration in WebConfig - Settings - Boot Input Modes
 
 ![image](https://github.com/user-attachments/assets/9e7fa37d-f5e5-4ce3-85a8-1a5a61ec6f62)
 
 If you do not want to change mode by button combination, set "No Mode Selected" to all buttons.
 
-## What is difference from original GP2040-CE?
+## Firmware update
+- Hold S2 + B3 + B4 5 seconds for Firmware Upgrade mode - Bootsel (Or hold Boot button on RP2040-Zero and press reset button)
+
+## What is different from original GP2040-CE?
 - Supports input by 8BitDo Arcade stick USB dongle(Switch mode)
 - Neogeo mini's button alignment is ABCD instead of BOX alignment.
 - Additional 3.5 seconds boot delay when connecting to Egret II mini to prevent stuck in white when connected to 2P side.
