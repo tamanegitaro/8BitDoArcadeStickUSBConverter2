@@ -46,7 +46,7 @@ Hotkeys:
 - Hold S1 + B3 + B4 5 seconds for Webconfig
 
 ## Pin mappings
-In Web configuration - GPIO Pin mapping configuration, you can change pin mappings. Connect USB Converter to PC, set USB Converter mode to WebConfig mode, and open https://192.168.7.1/ in Browser. You should be able to find following pin mapping configuration window.
+In Web configuration - GPIO Pin mapping configuration, you can change pin mappings. Connect USB Converter to PC, set USB Converter mode to WebConfig mode, and open http://192.168.7.1/ in Browser. You should be able to find following pin mapping configuration window.
 
 <img width="1919" height="1012" alt="image" src="https://github.com/user-attachments/assets/f3657a64-f232-4ae9-af5f-fb67b2db22ac" />
 
