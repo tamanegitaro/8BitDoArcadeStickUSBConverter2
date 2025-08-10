@@ -1,4 +1,4 @@
-<p align="center">
+<img width="1919" height="1012" alt="image" src="https://github.com/user-attachments/assets/4c936190-dd9d-459b-b682-669efa8221b6" /><p align="center">
   <a href="https://gp2040-ce.info">
     <img alt="GP2040-CE" src="https://raw.githubusercontent.com/OpenStickCommunity/Site/main/docs/assets/images/gp2040-ce-logo.png" />
   </a>
@@ -39,10 +39,22 @@ You can connect your compatible device to Nintendo Switch, PS4, Egret II mini, A
 
 Hotkeys:
 
-- Hold S2 + B3 + B4 5 seconds for Firmware Upgrade mode - Bootsel (Or hold Boot button on RP2040-Zero and connect it to your PC)
+- Hold S2 + B3 + B4 5 seconds for Firmware Upgrade mode - Bootsel (Or hold Boot button on RP2040-Zero and press reset button)
 - Hold S1 + B3 + B4 5 seconds for Webconfig
 
-To change game mode, Hold Home + S1 + S2 and push button below.
+## Pin mappings
+In Web configuration - GPIO Pin mapping configuration, you can change pin mappings. Connect USB Converter to PC, set USB Converter mode to WebConfig mode, and open https://192.168.0.7/ in Browser. You should be able to find following pin mapping configuration window.
+
+<img width="1919" height="1012" alt="image" src="https://github.com/user-attachments/assets/f3657a64-f232-4ae9-af5f-fb67b2db22ac" />
+
+Pin mapping of controllers are shown as follows. Button name in parentheses is default configuration.
+
+<img width="1330" height="745" alt="image" src="https://github.com/user-attachments/assets/145fb46d-5c4d-4bdb-9248-51e1640d5728" />
+<img width="1330" height="745" alt="image" src="https://github.com/user-attachments/assets/65c898f1-73d5-437a-9b9c-75fb977d1911" />
+<img width="1330" height="745" alt="image" src="https://github.com/user-attachments/assets/21874720-5e3e-4696-ac6d-bc00a14df274" />
+
+## Game mode
+In 8BitDo Arcade stick and Egret II mini Control panel, you can change game mode by pressing button combination. To change game mode, Hold Home + S1 + S2 and push button below.
 
 - B1 : Nintendo Switch
 - B2 : XInput
@@ -56,6 +68,8 @@ To change game mode, Hold Home + S1 + S2 and push button below.
 This is default configuration. You need to configure each button's mode by WebConfig - Settings - Boot Input Modes
 
 ![image](https://github.com/user-attachments/assets/9e7fa37d-f5e5-4ce3-85a8-1a5a61ec6f62)
+
+If you do not want to change mode by button combination, set "No Mode Selected" to all buttons.
 
 ## What is difference from original GP2040-CE?
 - Supports input by 8BitDo Arcade stick USB dongle(Switch mode)
@@ -120,39 +134,27 @@ Use 4 screws and finish build.
 
 - RPI-RP2 storage will be recognized(Bootsel mode). Copy flash_nuke.uf2 in RPI-RP2. This will initialize your RP2040 Zero.
 - RPI-RP2 storage will open again after initialization is completed. Copy GP2040-CE_0.7.10_WaveshareZero.uf2.
-- Once copy is completed, hold BOOT button on RP2040-Zero and reconnect converter to your PC.
-- RPI-RP2 storage will open again. Copy force_webconfig.uf2.
+- Once copy is completed, disconnect USB converter and finished!
+
+
+***************************************
+#FAQ
+## How to manually enter webconfig mode without connecting USB controller instead of pressing S2 + B3 + B4 for 5 seconds
+- Hold BOOT button on RP2040-Zero and connect converter to your PC
+- RPI-RP2 storage will be recognized(Bootsel mode). Copy force_webconfig.uf2 in RPI-RP2. This will force USB converter to be in webconfig mode.
 - After copy is completed, open web browser in your PC and open http://192.168.7.1
 
 ![image](https://github.com/user-attachments/assets/f4345e02-e9cd-413c-9ad9-1b506f4f3db4)
 
-- Open settings - Boot Input Modes
+## How to change Boot Input Modes
+- Open Webconfig in PC and open settings - Boot Input Modes
 - Choose input mode for each button
 
 ![image](https://github.com/user-attachments/assets/5b1002b6-2656-4d90-bd48-fc6ceefabed8)
 
-
+## How to change Pin mapping
 - Open configuration - Pin mapping
 - Delete all pin configurations as below and make sure to click save
-
-![image](https://github.com/user-attachments/assets/f3be051c-80be-4b48-b9dc-84e51ec5c2e6)
-
-- Open configuration - Peripheral settings
-- Configure I2C and USB port as below and make sure to click save
-
-![image](https://github.com/user-attachments/assets/ccd15258-31ae-4df8-b9f9-1fb742217121)
-
-- Open configuration - Display configuration
-- Enable display and make sure to click save
-
-![image](https://github.com/user-attachments/assets/a5efbef2-d50c-4591-b340-44a9c1a529e5)
-
-- Open configuration - add-on configuration
-- Enable Gamepad USB Host configuration and make sure to click save
-
-![image](https://github.com/user-attachments/assets/0195a8eb-2c4d-4328-a9ca-8574c9910aa4)
-
-- Click Reboot - Controller and configuration is finished!
 
 ## **************************************************
 ## **************************************************
