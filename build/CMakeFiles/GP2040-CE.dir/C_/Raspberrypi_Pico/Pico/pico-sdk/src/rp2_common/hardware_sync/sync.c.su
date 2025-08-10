@@ -1,0 +1,8 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c:18:6:spin_locks_reset	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c:24:14:spin_lock_init	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c:31:6:next_striped_spin_lock_num	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c:39:6:spin_lock_claim	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c:44:6:spin_lock_claim_mask	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c:50:6:spin_lock_unclaim	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c:56:5:spin_lock_claim_unused	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c:60:6:spin_lock_is_claimed	8	static

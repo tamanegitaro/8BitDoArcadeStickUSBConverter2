@@ -1,0 +1,15 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/gpaddon.h:28:27:virtual USBListener* GPAddon::getListener()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/bootsel_button.h:22:18:virtual void BootselButtonAddon::process()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/bootsel_button.h:24:18:virtual void BootselButtonAddon::postprocess(bool)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/bootsel_button.h:25:18:virtual void BootselButtonAddon::reinit()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/bootsel_button.h:18:7:BootselButtonAddon::~BootselButtonAddon()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/bootsel_button.h:18:7:virtual BootselButtonAddon::~BootselButtonAddon()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/bootsel_button.cpp:69:1:void __static_initialization_and_destruction_0(int, int)	112	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/bootsel_button.cpp:45:6:virtual void BootselButtonAddon::setup()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/bootsel_button.cpp:40:6:virtual bool BootselButtonAddon::available()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/bootsel_button.cpp:10:6:bool BootselButtonAddon::isBootselPressed()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/bootsel_button.cpp:50:6:virtual void BootselButtonAddon::preprocess()	16	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\basic_string.tcc:206:7:void std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_M_construct(_InIterator, _InIterator, std::forward_iterator_tag) [with _FwdIterator = const char*; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/bootsel_button.h:26:25:virtual std::string BootselButtonAddon::name()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/bootsel_button.cpp:69:1:cpp)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/bootsel_button.cpp:69:1:cpp)	8	static

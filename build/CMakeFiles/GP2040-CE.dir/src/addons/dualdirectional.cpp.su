@@ -1,0 +1,25 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/gpaddon.h:28:27:virtual USBListener* GPAddon::getListener()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/dualdirectional.h:24:18:virtual void DualDirectionalInput::postprocess(bool)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/dualdirectional.h:19:7:DualDirectionalInput::~DualDirectionalInput()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/dualdirectional.cpp:43:6:virtual void DualDirectionalInput::reinit()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/dualdirectional.h:19:7:virtual DualDirectionalInput::~DualDirectionalInput()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/dualdirectional.cpp:341:1:void __static_initialization_and_destruction_0(int, int)	112	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/dualdirectional.cpp:7:6:virtual bool DualDirectionalInput::available()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/dualdirectional.cpp:11:6:virtual void DualDirectionalInput::setup()	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/dualdirectional.cpp:162:6:void DualDirectionalInput::OverrideGamepad(Gamepad*, DpadMode, uint8_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/dualdirectional.cpp:178:9:uint8_t DualDirectionalInput::SOCDGamepadClean(uint8_t, bool)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/dualdirectional.cpp:221:9:uint8_t DualDirectionalInput::SOCDCombine(SOCDMode, uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/dualdirectional.cpp:249:6:void DualDirectionalInput::SOCDDualClean(SOCDMode)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/dualdirectional.cpp:304:9:uint8_t DualDirectionalInput::gpadToBinary(DpadMode, GamepadState)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/dualdirectional.cpp:339:16:const SOCDMode DualDirectionalInput::getSOCDMode(const GamepadOptions&)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/dualdirectional.cpp:123:6:virtual void DualDirectionalInput::process()	72	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\list.tcc:331:5:std::__cxx11::list<_Tp, _Alloc>::__remove_return_type std::__cxx11::list<_Tp, _Alloc>::remove(const value_type&) [with _Tp = DpadDirection; _Alloc = std::allocator<DpadDirection>]	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/dualdirectional.cpp:53:9:uint8_t DualDirectionalInput::updateDpadDDI(uint8_t, DpadDirection)	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/dualdirectional.cpp:91:9:uint8_t DualDirectionalInput::filterToFourWayModeDDI(uint8_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/dualdirectional.cpp:100:6:virtual void DualDirectionalInput::preprocess()	16	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\basic_string.tcc:206:7:void std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_M_construct(_InIterator, _InIterator, std::forward_iterator_tag) [with _FwdIterator = const char*; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/dualdirectional.h:27:25:virtual std::string DualDirectionalInput::name()	8	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\list.tcc:66:5:void std::__cxx11::_List_base<_Tp, _Alloc>::_M_clear() [with _Tp = DpadDirection; _Alloc = std::allocator<DpadDirection>]	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/dualdirectional.cpp:56:29:void __tcf_1()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/dualdirectional.cpp:341:1:cpp)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/dualdirectional.cpp:341:1:cpp)	8	static

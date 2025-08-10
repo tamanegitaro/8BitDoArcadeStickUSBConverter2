@@ -1,0 +1,15 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/gpaddon.h:28:27:virtual USBListener* GPAddon::getListener()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/snes_input.h:36:18:virtual void SNESpadInput::preprocess()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/snes_input.h:37:18:virtual void SNESpadInput::postprocess(bool)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/snes_input.h:38:18:virtual void SNESpadInput::reinit()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/snes_input.h:31:7:SNESpadInput::~SNESpadInput()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/snes_input.h:31:7:virtual SNESpadInput::~SNESpadInput()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/snes_input.cpp:173:1:void __static_initialization_and_destruction_0(int, int)	112	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/snes_input.cpp:7:6:virtual bool SNESpadInput::available()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/snes_input.cpp:171:10:uint16_t SNESpadInput::map(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/snes_input.cpp:16:6:virtual void SNESpadInput::setup()	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/snes_input.cpp:83:6:virtual void SNESpadInput::process()	32	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\basic_string.tcc:206:7:void std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_M_construct(_InIterator, _InIterator, std::forward_iterator_tag) [with _FwdIterator = const char*; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/snes_input.h:39:25:virtual std::string SNESpadInput::name()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/snes_input.cpp:173:1:cpp)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/snes_input.cpp:173:1:cpp)	8	static

@@ -1,0 +1,6 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp:14:7:void* operator new(std::size_t)	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp:18:7:void* operator new [](std::size_t)	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp:22:6:void operator delete(void*)	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp:24:6:void operator delete [](void*)	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp:28:6:void operator delete(void*, std::size_t)	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp:30:6:void operator delete [](void*, std::size_t)	8	static

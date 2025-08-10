@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cmake_install.cmake")
+  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cmake_install.cmake")
 
 endif()
 

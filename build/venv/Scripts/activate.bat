@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Raspberrypi_Pico\GP2040-CE-0.7.11_8BitDo4\GP2040-CE\build\venv
+set VIRTUAL_ENV=C:\Raspberrypi_Pico\GP2040-CE-0.7.11_8BitDo5\8BitDoArcadeStickUSBConverter2\build\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
@@ -25,7 +25,6 @@ if defined _OLD_VIRTUAL_PATH set PATH=%_OLD_VIRTUAL_PATH%
 if not defined _OLD_VIRTUAL_PATH set _OLD_VIRTUAL_PATH=%PATH%
 
 set PATH=%VIRTUAL_ENV%\Scripts;%PATH%
-set VIRTUAL_ENV_PROMPT=(venv) 
 
 :END
 if defined _OLD_CODEPAGE (

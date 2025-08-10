@@ -1,0 +1,6 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/interfaces/i2c/pcf8575/pcf8575.cpp:13:6:void PCF8575::send(uint16_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/interfaces/i2c/pcf8575/pcf8575.cpp:9:6:void PCF8575::reset()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/interfaces/i2c/pcf8575/pcf8575.cpp:5:6:void PCF8575::begin()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/interfaces/i2c/pcf8575/pcf8575.cpp:20:10:uint16_t PCF8575::receive()	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/interfaces/i2c/pcf8575/pcf8575.cpp:27:6:void PCF8575::setPin(uint8_t, uint8_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/interfaces/i2c/pcf8575/pcf8575.cpp:38:6:bool PCF8575::getPin(uint8_t)	8	static

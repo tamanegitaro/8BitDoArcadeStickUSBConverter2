@@ -1,4 +1,4 @@
-# Install script for directory: C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/_deps/arduinojson-subbuild
+# Install script for directory: C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/_deps/arduinojson-subbuild
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/_deps/arduinojson-subbuild/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/_deps/arduinojson-subbuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -506,6 +506,16 @@ typedef enum _GPEventType {
     GP_EVENT_MENU_NAVIGATE = 14
 } GPEventType;
 
+typedef enum _CyberstickLever {
+    CYBERSTICK_LEVER_NORMAL = 0,
+    CYBERSTICK_LEVER_SWAP = 1
+} CyberstickLever;
+
+typedef enum _CyberstickLeverInvertY {
+    CYBERSTICK_LEVER_DIRECTION_NORMAL = 0,
+    CYBERSTICK_LEVER_DIRECTION_INVERT = 1
+} CyberstickLeverInvertY;
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -1033,6 +1043,18 @@ extern "C" {
 #define GPEventType_GP_EVENT_SYSTEM_REBOOT GP_EVENT_SYSTEM_REBOOT
 #define GPEventType_GP_EVENT_MENU_NAVIGATE GP_EVENT_MENU_NAVIGATE
 
+#define _CyberstickLever_MIN CYBERSTICK_LEVER_NORMAL
+#define _CyberstickLever_MAX CYBERSTICK_LEVER_SWAP
+#define _CyberstickLever_ARRAYSIZE ((CyberstickLever)(CYBERSTICK_LEVER_SWAP+1))
+#define CyberstickLever_CYBERSTICK_LEVER_NORMAL CYBERSTICK_LEVER_NORMAL
+#define CyberstickLever_CYBERSTICK_LEVER_SWAP CYBERSTICK_LEVER_SWAP
+
+#define _CyberstickLeverInvertY_MIN CYBERSTICK_LEVER_DIRECTION_NORMAL
+#define _CyberstickLeverInvertY_MAX CYBERSTICK_LEVER_DIRECTION_INVERT
+#define _CyberstickLeverInvertY_ARRAYSIZE ((CyberstickLeverInvertY)(CYBERSTICK_LEVER_DIRECTION_INVERT+1))
+#define CyberstickLeverInvertY_CYBERSTICK_LEVER_DIRECTION_NORMAL CYBERSTICK_LEVER_DIRECTION_NORMAL
+#define CyberstickLeverInvertY_CYBERSTICK_LEVER_DIRECTION_INVERT CYBERSTICK_LEVER_DIRECTION_INVERT
+
 
 /* Enum values (GP2040-CE extension) */
 #define ButtonLayout_VALUELIST(X) \
@@ -1495,6 +1517,14 @@ X(GP_EVENT_STORAGE_SAVE, 12) \
 X(GP_EVENT_SYSTEM_REBOOT, 13) \
 X(GP_EVENT_MENU_NAVIGATE, 14)
 
+#define CyberstickLever_VALUELIST(X) \
+X(CYBERSTICK_LEVER_NORMAL, 0) \
+X(CYBERSTICK_LEVER_SWAP, 1)
+
+#define CyberstickLeverInvertY_VALUELIST(X) \
+X(CYBERSTICK_LEVER_DIRECTION_NORMAL, 0) \
+X(CYBERSTICK_LEVER_DIRECTION_INVERT, 1)
+
 
 /* List of all enums (GP2040-CE extension) */
 #define ENUMS_ENUMS_GP2040(X) \
@@ -1531,6 +1561,8 @@ X(PS4ControllerIDMode) \
 X(DisplaySaverMode) \
 X(ButtonLayoutOrientation) \
 X(GPEventType) \
+X(CyberstickLever) \
+X(CyberstickLeverInvertY) \
 
 #ifdef __cplusplus
 } /* extern "C" */

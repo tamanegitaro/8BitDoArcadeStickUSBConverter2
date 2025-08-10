@@ -1165,6 +1165,12 @@ typedef struct _KeyboardHostOptions {
 typedef struct _GamepadUSBHostOptions {
     bool has_enabled;
     bool enabled;
+    bool has_cyberstickLever;
+    uint32_t cyberstickLever;
+    bool has_cyberstickStickInvertY;
+    uint32_t cyberstickStickInvertY;
+    bool has_cyberstickLeverInvertY;
+    uint32_t cyberstickLeverInvertY;
 } GamepadUSBHostOptions;
 
 typedef struct _FocusModeOptions {
@@ -1516,7 +1522,7 @@ extern "C" {
 #define WiiOptions_ControllerOptions_init_default {false, WiiOptions_NunchukOptions_init_default, false, WiiOptions_ClassicOptions_init_default, false, WiiOptions_TaikoOptions_init_default, false, WiiOptions_GuitarOptions_init_default, false, WiiOptions_DrumOptions_init_default, false, WiiOptions_TurntableOptions_init_default}
 #define SNESOptions_init_default                 {false, 0, false, 0, false, 0, false, 0}
 #define KeyboardHostOptions_init_default         {false, 0, false, 0, false, KeyboardMapping_init_default, false, 0, false, 0, false, 0, false, 0}
-#define GamepadUSBHostOptions_init_default       {false, 0}
+#define GamepadUSBHostOptions_init_default       {false, 0, false, 0, false, 0, false, 0}
 #define FocusModeOptions_init_default            {false, 0, false, 0, false, 0, false, 0, false, 0, false, 0, false, 0}
 #define MacroInput_init_default                  {false, 0, false, 0, false, 0u}
 #define Macro_init_default                       {false, _MacroType_MIN, false, "", 0, {MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default, MacroInput_init_default}, false, 0, false, 0, false, 0, false, 0, false, true, false, true, false, false}
@@ -1581,7 +1587,7 @@ extern "C" {
 #define WiiOptions_ControllerOptions_init_zero   {false, WiiOptions_NunchukOptions_init_zero, false, WiiOptions_ClassicOptions_init_zero, false, WiiOptions_TaikoOptions_init_zero, false, WiiOptions_GuitarOptions_init_zero, false, WiiOptions_DrumOptions_init_zero, false, WiiOptions_TurntableOptions_init_zero}
 #define SNESOptions_init_zero                    {false, 0, false, 0, false, 0, false, 0}
 #define KeyboardHostOptions_init_zero            {false, 0, false, 0, false, KeyboardMapping_init_zero, false, 0, false, 0, false, 0, false, 0}
-#define GamepadUSBHostOptions_init_zero          {false, 0}
+#define GamepadUSBHostOptions_init_zero          {false, 0, false, 0, false, 0, false, 0}
 #define FocusModeOptions_init_zero               {false, 0, false, 0, false, 0, false, 0, false, 0, false, 0, false, 0}
 #define MacroInput_init_zero                     {false, 0, false, 0, false, 0}
 #define Macro_init_zero                          {false, _MacroType_MIN, false, "", 0, {MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero, MacroInput_init_zero}, false, 0, false, 0, false, 0, false, 0, false, 0, false, 0, false, 0}
@@ -2093,6 +2099,9 @@ extern "C" {
 #define KeyboardHostOptions_mouseMiddle_tag      6
 #define KeyboardHostOptions_mouseRight_tag       7
 #define GamepadUSBHostOptions_enabled_tag        1
+#define GamepadUSBHostOptions_cyberstickLever_tag 2
+#define GamepadUSBHostOptions_cyberstickStickInvertY_tag 3
+#define GamepadUSBHostOptions_cyberstickLeverInvertY_tag 4
 #define FocusModeOptions_enabled_tag             1
 #define FocusModeOptions_pin_tag                 2
 #define FocusModeOptions_buttonLockMask_tag      3
@@ -2944,7 +2953,10 @@ X(a, STATIC,   OPTIONAL, UINT32,   mouseRight,                       7, 0)
 #define KeyboardHostOptions_mapping_MSGTYPE KeyboardMapping
 
 #define GamepadUSBHostOptions_FIELDLIST(X, a) \
-X(a, STATIC,   OPTIONAL, BOOL,     enabled,                          1, 0)
+X(a, STATIC,   OPTIONAL, BOOL,     enabled,                          1, 0) \
+X(a, STATIC,   OPTIONAL, UINT32,   cyberstickLever,                  2, 0) \
+X(a, STATIC,   OPTIONAL, UINT32,   cyberstickStickInvertY,           3, 0) \
+X(a, STATIC,   OPTIONAL, UINT32,   cyberstickLeverInvertY,           4, 0)
 #define GamepadUSBHostOptions_CALLBACK NULL
 #define GamepadUSBHostOptions_DEFAULT NULL
 
@@ -3287,7 +3299,7 @@ extern const pb_msgdesc_t Config_msg;
 #define Config_fields &Config_msg
 
 /* Maximum encoded size of messages (where known) */
-#define AddonOptions_size                        9317
+#define AddonOptions_size                        9335
 #define AlternativePinMappings_size              132
 #define AnalogADS1219Options_size                57
 #define AnalogADS1256Options_size                42
@@ -3299,7 +3311,7 @@ extern const pb_msgdesc_t Config_msg;
 #define ButtonLayoutParamsLeft_size              48
 #define ButtonLayoutParamsRight_size             48
 #define BuzzerOptions_size                       30
-#define Config_size                              16477
+#define Config_size                              16495
 #define DRV8833RumbleOptions_size                51
 #define DisplayOptions_size                      1293
 #define DualDirectionalOptions_size              52
@@ -3307,7 +3319,7 @@ extern const pb_msgdesc_t Config_msg;
 #define FocusModeOptions_size                    32
 #define ForcedSetupOptions_size                  2
 #define GamepadOptions_size                      246
-#define GamepadUSBHostOptions_size               2
+#define GamepadUSBHostOptions_size               20
 #define GpioMappingInfo_size                     25
 #define GpioMappings_size                        830
 #define HotkeyEntry_size                         20

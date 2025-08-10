@@ -1,0 +1,19 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/gpaddon.h:28:27:virtual USBListener* GPAddon::getListener()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/analog.h:103:18:virtual void AnalogInput::preprocess()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/analog.h:104:18:virtual void AnalogInput::postprocess(bool)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/analog.h:105:18:virtual void AnalogInput::reinit()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/analog.h:98:7:AnalogInput::~AnalogInput()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/analog.h:98:7:virtual AnalogInput::~AnalogInput()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/analog.cpp:175:1:void __static_initialization_and_destruction_0(int, int)	112	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/analog.cpp:17:6:virtual bool AnalogInput::available()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/analog.cpp:21:6:virtual void AnalogInput::setup()	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/analog.cpp:152:7:float AnalogInput::emaCalculation(float, float)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/analog.cpp:156:10:uint16_t AnalogInput::map(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/analog.cpp:137:7:float AnalogInput::readPin(int32_t, uint16_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/analog.cpp:160:7:float AnalogInput::magnitudeCalculation(adc_instance&)	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/analog.cpp:166:6:void AnalogInput::radialDeadzone(adc_instance&)	40	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/analog.cpp:75:6:virtual void AnalogInput::process()	32	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\basic_string.tcc:206:7:void std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_M_construct(_InIterator, _InIterator, std::forward_iterator_tag) [with _FwdIterator = const char*; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/analog.h:106:25:virtual std::string AnalogInput::name()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/analog.cpp:175:1:cpp)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/analog.cpp:175:1:cpp)	8	static

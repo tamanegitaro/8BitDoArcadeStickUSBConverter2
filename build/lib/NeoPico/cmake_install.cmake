@@ -1,4 +1,4 @@
-# Install script for directory: C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/lib/NeoPico
+# Install script for directory: C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/NeoPico
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

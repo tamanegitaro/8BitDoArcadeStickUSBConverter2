@@ -1,0 +1,12 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/pico_pio_usb/src/pio_usb_device.c:28:13:update_ep0_crc5_lut	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/pico_pio_usb/src/pio_usb_device.c:291:13:prepare_ep0_data	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/pico_pio_usb/src/pio_usb_device.c:304:13:prepare_ep0_rx	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/pico_pio_usb/src/pio_usb_device.c:207:15:pio_usb_device_init	48	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/pico_pio_usb/src/pio_usb_device.c:260:6:pio_usb_device_set_address	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/pico_pio_usb/src/pio_usb_device.c:264:6:pio_usb_device_endpoint_open	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/pico_pio_usb/src/pio_usb_device.c:373:13:configure_all_endpoints	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/pico_pio_usb/src/pio_usb_device.c:384:12:process_device_setup_stage	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/pico_pio_usb/src/pio_usb_device.c:278:6:pio_usb_device_transfer	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/pico_pio_usb/src/pio_usb_device.c:317:6:pio_usb_device_task	40	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/pico_pio_usb/src/pio_usb_device.c:449:13:__pio_usb_device_irq_handler	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/pico_pio_usb/src/pio_usb_device.c:88:13:usb_device_packet_handler	64	static

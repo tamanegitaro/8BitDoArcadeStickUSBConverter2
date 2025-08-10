@@ -1,0 +1,12 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c:23:6:dma_channel_claim	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c:28:6:dma_claim_mask	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c:34:6:dma_channel_unclaim	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c:39:6:dma_unclaim_mask	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c:45:5:dma_claim_unused_channel	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c:49:6:dma_channel_is_claimed	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c:54:6:dma_timer_claim	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c:59:6:dma_timer_unclaim	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c:64:5:dma_claim_unused_timer	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c:68:6:dma_timer_is_claimed	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c:73:6:dma_channel_cleanup	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c:87:6:print_dma_ctrl	104	static

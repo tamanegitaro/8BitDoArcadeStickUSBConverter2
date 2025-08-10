@@ -1,0 +1,18 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/xinput/XInputAuthUSBListener.h:19:18:virtual void XInputAuthUSBListener::mount(uint8_t, uint8_t, const uint8_t*, uint16_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/xinput/XInputAuthUSBListener.h:22:18:virtual void XInputAuthUSBListener::report_received(uint8_t, uint8_t, const uint8_t*, uint16_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/xinput/XInputAuthUSBListener.h:23:18:virtual void XInputAuthUSBListener::report_sent(uint8_t, uint8_t, const uint8_t*, uint16_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/xinput/XInputAuthUSBListener.h:24:18:virtual void XInputAuthUSBListener::set_report_complete(uint8_t, uint8_t, uint8_t, uint8_t, uint16_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/xinput/XInputAuthUSBListener.h:25:18:virtual void XInputAuthUSBListener::get_report_complete(uint8_t, uint8_t, uint8_t, uint8_t, uint16_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xinput/XInputAuthUSBListener.cpp:25:6:virtual void XInputAuthUSBListener::setup()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xinput/XInputAuthUSBListener.cpp:79:6:virtual void XInputAuthUSBListener::unmount(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xinput/XInputAuthUSBListener.cpp:17:6:void XInputAuthUSBListener::setAuthData(XInputAuthData*)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xinput/XInputAuthUSBListener.cpp:35:6:bool XInputAuthUSBListener::xinputh_vendor_report(tusb_dir_t, uint8_t, uint16_t, uint16_t, uint8_t*, uintptr_t)	64	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xinput/XInputAuthUSBListener.cpp:165:6:bool XInputAuthUSBListener::auth_dongle_get_serial()	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xinput/XInputAuthUSBListener.cpp:178:6:bool XInputAuthUSBListener::auth_dongle_init_challenge()	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xinput/XInputAuthUSBListener.cpp:191:6:bool XInputAuthUSBListener::auth_dongle_data_reply(uint8_t)	40	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xinput/XInputAuthUSBListener.cpp:205:6:bool XInputAuthUSBListener::auth_dongle_challenge_verify()	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xinput/XInputAuthUSBListener.cpp:218:6:bool XInputAuthUSBListener::auth_dongle_wait_get_state()	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xinput/XInputAuthUSBListener.cpp:230:6:bool XInputAuthUSBListener::auth_dongle_keepalive()	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xinput/XInputAuthUSBListener.cpp:240:6:void XInputAuthUSBListener::auth_dongle_wait(uint8_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xinput/XInputAuthUSBListener.cpp:60:6:virtual void XInputAuthUSBListener::xmount(uint8_t, uint8_t, uint8_t, uint8_t)	200	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xinput/XInputAuthUSBListener.cpp:87:6:void XInputAuthUSBListener::process()	16	static

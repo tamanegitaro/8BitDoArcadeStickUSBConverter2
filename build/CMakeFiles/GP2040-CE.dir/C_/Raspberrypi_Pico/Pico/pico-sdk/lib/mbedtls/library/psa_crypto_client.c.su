@@ -1,0 +1,3 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/lib/mbedtls/library/psa_crypto_client.c:33:6:psa_reset_key_attributes	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/lib/mbedtls/library/psa_crypto_client.c:39:14:psa_set_key_domain_parameters	32	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/lib/mbedtls/library/psa_crypto_client.c:69:14:psa_get_key_domain_parameters	16	static

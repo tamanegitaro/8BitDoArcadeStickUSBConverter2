@@ -1,0 +1,9 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/usbhostmanager.h:20:25:void __tcf_0()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addonmanager.cpp:25:6:void AddonManager::ReinitializeAddons()	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addonmanager.cpp:32:6:void AddonManager::PreprocessAddons()	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addonmanager.cpp:39:6:void AddonManager::ProcessAddons()	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addonmanager.cpp:46:6:void AddonManager::PostprocessAddons(bool)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addonmanager.cpp:54:11:GPAddon* AddonManager::GetAddon(std::string)	48	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\vector.tcc:426:7:) [with _Args = {AddonBlock* const&}; _Tp = AddonBlock*; _Alloc = std::allocator<AddonBlock*>]	48	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addonmanager.cpp:4:6:bool AddonManager::LoadAddon(GPAddon*)	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addonmanager.cpp:18:6:bool AddonManager::LoadUSBAddon(GPAddon*)	16	static

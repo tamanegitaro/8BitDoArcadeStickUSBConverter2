@@ -1,0 +1,14 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c:43:6:runtime_install_stack_guard	0	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\unistd.h:18:6:_exit	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c:192:29:_sbrk	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c:250:27:_getpid	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c:254:25:_kill	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c:259:6:exit	8	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\assert.h:41:6:__assert_func	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c:67:6:runtime_init	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c:221:27:_gettimeofday	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c:238:25:_times	8	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\time.h:423:5:settimeofday	24	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c:307:51:panic	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c:275:32:panic_unsupported	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c:329:6:hard_assertion_failure	8	static

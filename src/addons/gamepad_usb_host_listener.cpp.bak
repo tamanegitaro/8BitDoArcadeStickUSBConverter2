@@ -7,8 +7,42 @@
 #include "system.h"
 #include "gamepad.h"
 
+#define BUTTON_MASK_S1  (1<<0)
+#define BUTTON_MASK_S2  (1<<1)
+#define BUTTON_MASK_UP  (1<<2)
+#define BUTTON_MASK_DOWN (1<<3)
+#define BUTTON_MASK_RIGHT (1<<4)
+#define BUTTON_MASK_LEFT (1<<5)
+#define BUTTON_MASK_B1  (1<<6)
+#define BUTTON_MASK_B2  (1<<7)
+#define BUTTON_MASK_R2  (1<<8)
+#define BUTTON_MASK_L2  (1<<9)
+#define BUTTON_MASK_B3  (1<<10)
+#define BUTTON_MASK_B4  (1<<11)
+#define BUTTON_MASK_R1  (1<<12)
+#define BUTTON_MASK_L1  (1<<13)
+#define BUTTON_MASK_A1  (1<<14)
+#define BUTTON_MASK_A2  (1<<15)
+#define BUTTON_MASK_L3  (1<<26)
+#define BUTTON_MASK_R3  (1<<27)
+
+#define NO_MODE_SELECTED 0xFF
+
+#define UART_ID uart1
+#define BAUD_RATE 115200
+extern char string_a[100];
+
+extern uint32_t buttonarray;
+uint8_t cyberstickLever = 0; // 0 = Normal, 1 = Swap
+uint8_t cyberstickLeverInvertY = 0; // 0 = Normal, 1 = Invert
+uint8_t cyberstickStickInvertY = 0; // 0 = Normal, 1 = Invert
+
 void GamepadUSBHostListener::setup() {
     _controller_host_enabled = false;
+
+    cyberstickLever = Storage::getInstance().getAddonOptions().gamepadUSBHostOptions.cyberstickLever;
+    cyberstickStickInvertY = Storage::getInstance().getAddonOptions().gamepadUSBHostOptions.cyberstickStickInvertY;
+    cyberstickLeverInvertY = Storage::getInstance().getAddonOptions().gamepadUSBHostOptions.cyberstickLeverInvertY;
 }
 
 void GamepadUSBHostListener::process() {
@@ -16,8 +50,8 @@ void GamepadUSBHostListener::process() {
     gamepad->hasAnalogTriggers = true;
     gamepad->hasLeftAnalogStick = true;
     gamepad->hasRightAnalogStick = true;
-    gamepad->state.dpad     |= _controller_host_state.dpad;
-    gamepad->state.buttons  |= _controller_host_state.buttons;
+    //gamepad->state.dpad     |= _controller_host_state.dpad;
+    //gamepad->state.buttons  |= _controller_host_state.buttons;
     gamepad->state.lx       = _controller_host_state.lx;
     gamepad->state.ly       = _controller_host_state.ly;
     gamepad->state.rx       = _controller_host_state.rx;
@@ -29,6 +63,7 @@ void GamepadUSBHostListener::process() {
 void GamepadUSBHostListener::mount(uint8_t dev_addr, uint8_t instance, uint8_t const* desc_report, uint16_t desc_len) {
     _controller_host_enabled = true;
     tuh_vid_pid_get(dev_addr, &controller_vid, &controller_pid);
+    buttonarray = 0;
 }
 
 void GamepadUSBHostListener::unmount(uint8_t dev_addr) {
@@ -59,27 +94,24 @@ void GamepadUSBHostListener::process_ctrlr_report(uint8_t dev_addr, uint8_t cons
     _controller_host_state.rx = joystick_mid;
     _controller_host_state.ry = joystick_mid;
 
-    switch(controller_pid)
-    {
-        case 0x2009:             // 8Bitdo Arcade Stick Switch mode
-            //PID 2009, VID 057E
-            process_8bitdoarcade(report);
-            break;
-        case DS4_ORG_PRODUCT_ID: // Sony Dualshock 4 controller
-        case DS4_PRODUCT_ID:     // Sony Dualshock 4 controller
-        case PS4_PRODUCT_ID:     // Razer Panthera
-            process_ds4(report);
-            break;
-        case 0x9400:             // Google Stadia controller
-            process_stadia(report);
-            break;
+	//sprintf(string_a, "pid: %04x, vid: %04x", controller_pid, controller_vid);
+    //uart_puts(UART_ID, string_a);
+    //sprintf(string_a, "len: %04d ", len);
+    //uart_puts(UART_ID, string_a);
 
-        case 0x0510:             // pre-2015 Ultrakstik 360
-        case 0x0511:             // Ultrakstik 360
-            process_ultrastik360(report);
-            break;
-        default:
-            break;
+    if(controller_pid == 0x2009)
+    {
+        process_8bitdoarcade(report);
+    }
+    else if (controller_pid == 0x0703 && len == 4)
+    {
+        /* pid: 0703, vid: 0ae4, len = 4 */
+        process_egret2minipanel(report);
+    }
+    else if (controller_pid == 0x0005 && len == 7)
+    {
+        /* pid: 0005, vid: 17a7, len: 0007*/
+        process_cyberstickusb(report);
     }
 }
 
@@ -109,47 +141,46 @@ bool GamepadUSBHostListener::diff_report(dualshock4_t const* rpt1, dualshock4_t 
     return result;
 }
 
-void GamepadUSBHostListener::process_8bitdoarcade_hotkey(void)
+void GamepadUSBHostListener::process_hotkey(uint32_t buttonarray)
 {
-  /* If A1, S1, S2 are pressed at same time, activate hotkey */
-  if((_controller_host_state.buttons & GAMEPAD_MASK_A1) && (_controller_host_state.buttons & GAMEPAD_MASK_S2) && (_controller_host_state.buttons & GAMEPAD_MASK_S1))
-  {
 
-    Gamepad * gamepad = Storage::getInstance().GetGamepad();
-    InputMode inputMode = gamepad->getOptions().inputMode;
-    InputMode previnputMode = inputMode;
-
-    const GamepadOptions& gamepadOptions = Storage::getInstance().getGamepadOptions();
-
-    if(_controller_host_state.buttons & GAMEPAD_MASK_B1) inputMode = (InputMode)gamepadOptions.inputModeB1; /* B1 XBOX */
-    if(_controller_host_state.buttons & GAMEPAD_MASK_B2) inputMode = (InputMode)gamepadOptions.inputModeB2; /* B2 PCEMINI */
-    if(_controller_host_state.buttons & GAMEPAD_MASK_R2) inputMode = (InputMode)gamepadOptions.inputModeR2; /* R2 NEOGEO */
-    if(_controller_host_state.buttons & GAMEPAD_MASK_L2) inputMode = (InputMode)gamepadOptions.inputModeL2; /* L2 EGRETII */
-    if(_controller_host_state.buttons & GAMEPAD_MASK_B3) inputMode = (InputMode)gamepadOptions.inputModeB3; /* B3 PS3 */
-    if(_controller_host_state.buttons & GAMEPAD_MASK_B4) inputMode = (InputMode)gamepadOptions.inputModeB4; /* B4 PS4 */
-    if(_controller_host_state.buttons & GAMEPAD_MASK_R1) inputMode = (InputMode)gamepadOptions.inputModeR1; /* R1 PSCLASSIC */
-    if(_controller_host_state.buttons & GAMEPAD_MASK_L1) inputMode = (InputMode)gamepadOptions.inputModeL1; /* L1 MDMINI/ASTRO */
-
-    if(inputMode == 0xFF) //If Input mode is "No mode selected", do nothing
+    /* If A1, S1, S2 are pressed at same time, activate hotkey */
+    if((buttonarray & (BUTTON_MASK_A1 | BUTTON_MASK_S1 | BUTTON_MASK_S2)) == (BUTTON_MASK_A1 | BUTTON_MASK_S1 | BUTTON_MASK_S2))
     {
-        inputMode = previnputMode;
-    }
-    else
-    {
-        if (inputMode != gamepad->getOptions().inputMode) {
-        // Save the changed input mode
-        gamepad->setInputMode(inputMode);
-        //EventManager::getInstance().triggerEvent(new GPStorageSaveEvent(true));
-        Storage::getInstance().save(true);
 
-        sleep_ms(100);
+        Gamepad * gamepad = Storage::getInstance().GetGamepad();
+        InputMode inputMode = gamepad->getOptions().inputMode;
 
-        System::reboot(System::BootMode::DEFAULT); /* Restart GP2040-CE */
-        while(1);
-        /* Wait for while */
+        const GamepadOptions& gamepadOptions = Storage::getInstance().getGamepadOptions();
+
+        // Check which button is pressed and set the input mode accordingly
+        if(buttonarray & BUTTON_MASK_B1) inputMode = (InputMode)gamepadOptions.inputModeB1; /* B1 */
+        else if(buttonarray & BUTTON_MASK_B2) inputMode = (InputMode)gamepadOptions.inputModeB2; /* B2 */
+        else if(buttonarray & BUTTON_MASK_B3) inputMode = (InputMode)gamepadOptions.inputModeB3; /* B3 */
+        else if(buttonarray & BUTTON_MASK_B4) inputMode = (InputMode)gamepadOptions.inputModeB4; /* B4 */
+        else if(buttonarray & BUTTON_MASK_R2) inputMode = (InputMode)gamepadOptions.inputModeR2; /* R2 */
+        else if(buttonarray & BUTTON_MASK_L2) inputMode = (InputMode)gamepadOptions.inputModeL2; /* L2 */
+        else if(buttonarray & BUTTON_MASK_R1) inputMode = (InputMode)gamepadOptions.inputModeR1; /* R1 */
+        else if(buttonarray & BUTTON_MASK_L1) inputMode = (InputMode)gamepadOptions.inputModeL1; /* L1 */
+
+        if(inputMode != NO_MODE_SELECTED) //If Input mode is not "No mode selected"
+        {
+            // If the input mode is different than the current one, change it
+            if (inputMode != gamepad->getOptions().inputMode) 
+            {
+                // Save the changed input mode
+                gamepad->setInputMode(inputMode);
+                //EventManager::getInstance().triggerEvent(new GPStorageSaveEvent(true));
+                Storage::getInstance().save(true);
+
+                sleep_ms(100);
+
+                System::reboot(System::BootMode::DEFAULT); /* Restart GP2040-CE */
+                // Wait until the system reboots
+                while(1);
+            }
         }
     }
-  }
 }
 
 void GamepadUSBHostListener::process_8bitdoarcade(uint8_t const* report)
@@ -166,166 +197,108 @@ void GamepadUSBHostListener::process_8bitdoarcade(uint8_t const* report)
         _controller_host_state.rx = map(controller_report.GD_GamePadPointerZl + (controller_report.GD_GamePadPointerZh * 16),0 ,255,GAMEPAD_JOYSTICK_MIN,GAMEPAD_JOYSTICK_MAX);
         _controller_host_state.ry = map(0xff - controller_report.GD_GamePadPointerRz,0 ,255,GAMEPAD_JOYSTICK_MIN,GAMEPAD_JOYSTICK_MAX);
 
-        if (controller_report.BTN_GamePadButton1 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_B3;
-        if (controller_report.BTN_GamePadButton2 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_B4;
-        if (controller_report.BTN_GamePadButton3 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_B1;
-        if (controller_report.BTN_GamePadButton4 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_B2;
-        if (controller_report.BTN_GamePadButton5 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_R1;
-        if (controller_report.BTN_GamePadButton6 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_R2;
-        if (controller_report.BTN_GamePadButton7 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_S2;
-        if (controller_report.BTN_GamePadButton8 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_S1;
-        if (controller_report.BTN_GamePadButton9 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_R3;
-        if (controller_report.BTN_GamePadButton10 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_L3;
-        if (controller_report.BTN_GamePadButton11 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_A1;
-        if (controller_report.BTN_GamePadButton12 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_L1;
-        if (controller_report.BTN_GamePadButton13 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_L2;
+        if (controller_report.BTN_GamePadButton1 == 1) {buttonarray |= BUTTON_MASK_B3;}else{buttonarray &= ~BUTTON_MASK_B3;} //GAMEPAD_MASK_B3;
+        if (controller_report.BTN_GamePadButton2 == 1) {buttonarray |= BUTTON_MASK_B4;}else{buttonarray &= ~BUTTON_MASK_B4;} //GAMEPAD_MASK_B4;
+        if (controller_report.BTN_GamePadButton3 == 1) {buttonarray |= BUTTON_MASK_B1;}else{buttonarray &= ~BUTTON_MASK_B1;} //GAMEPAD_MASK_B1;
+        if (controller_report.BTN_GamePadButton4 == 1) {buttonarray |= BUTTON_MASK_B2;}else{buttonarray &= ~BUTTON_MASK_B2;} //GAMEPAD_MASK_B2;
+        if (controller_report.BTN_GamePadButton5 == 1) {buttonarray |= BUTTON_MASK_R1;}else{buttonarray &= ~BUTTON_MASK_R1;} //GAMEPAD_MASK_R1;
+        if (controller_report.BTN_GamePadButton6 == 1) {buttonarray |= BUTTON_MASK_R2;}else{buttonarray &= ~BUTTON_MASK_R2;} //GAMEPAD_MASK_R2;
+        if (controller_report.BTN_GamePadButton7 == 1) {buttonarray |= BUTTON_MASK_S1;}else{buttonarray &= ~BUTTON_MASK_S1;} //GAMEPAD_MASK_S1;
+        if (controller_report.BTN_GamePadButton8 == 1) {buttonarray |= BUTTON_MASK_S2;}else{buttonarray &= ~BUTTON_MASK_S2;} //GAMEPAD_MASK_S2;
+        if (controller_report.BTN_GamePadButton9 == 1) {buttonarray |= BUTTON_MASK_R3;}else{buttonarray &= ~BUTTON_MASK_R3;} //GAMEPAD_MASK_R3;
+        if (controller_report.BTN_GamePadButton10 == 1) {buttonarray |= BUTTON_MASK_L3;}else{buttonarray &= ~BUTTON_MASK_L3;} //GAMEPAD_MASK_L3;
+        if (controller_report.BTN_GamePadButton11 == 1) {buttonarray |= BUTTON_MASK_A1;}else{buttonarray &= ~BUTTON_MASK_A1;} //GAMEPAD_MASK_A1;
+        if (controller_report.BTN_GamePadButton12 == 1) {buttonarray |= BUTTON_MASK_L1;}else{buttonarray &= ~BUTTON_MASK_L1;} //GAMEPAD_MASK_L1;
+        if (controller_report.BTN_GamePadButton13 == 1) {buttonarray |= BUTTON_MASK_L2;}else{buttonarray &= ~BUTTON_MASK_L2;} //GAMEPAD_MASK_L2;
 
-        if (controller_report.GD_GamePadDpadUp == 1) _controller_host_state.dpad |= GAMEPAD_MASK_UP;
-        if (controller_report.GD_GamePadDpadRight == 1) _controller_host_state.dpad |= GAMEPAD_MASK_RIGHT;
-        if (controller_report.GD_GamePadDpadDown == 1) _controller_host_state.dpad |= GAMEPAD_MASK_DOWN;
-        if (controller_report.GD_GamePadDpadLeft == 1) _controller_host_state.dpad |= GAMEPAD_MASK_LEFT;
+        if (controller_report.GD_GamePadDpadUp == 1) {buttonarray |= BUTTON_MASK_UP;}else{buttonarray &= ~BUTTON_MASK_UP;} //GAMEPAD_MASK_UP;
+        if (controller_report.GD_GamePadDpadRight == 1) {buttonarray |= BUTTON_MASK_RIGHT;}else{buttonarray &= ~BUTTON_MASK_RIGHT;} //GAMEPAD_MASK_RIGHT;
+        if (controller_report.GD_GamePadDpadDown == 1) {buttonarray |= BUTTON_MASK_DOWN;}else{buttonarray &= ~BUTTON_MASK_DOWN;} //GAMEPAD_MASK_DOWN;
+        if (controller_report.GD_GamePadDpadLeft == 1) {buttonarray |= BUTTON_MASK_LEFT;}else{buttonarray &= ~BUTTON_MASK_LEFT;} //GAMEPAD_MASK_LEFT;
+//  0  1  2  3  4  5  6  7
+// S1 S2 UP DN RT LT B1 B2
+//  8  9 10 11 12 13 14 15
+// R2 L2 B3 B4 R1 L1 A1 A2
+// 26 27
+// L3 R3
+        //sprintf(string_a, "btnary: %02x ", buttonarray);
+        //uart_puts(UART_ID, string_a);
+//        uart_puts(UART_ID, "\n");
+
+        process_hotkey(buttonarray);
     }
-
-    process_8bitdoarcade_hotkey();
-
-#if 0
-    sprintf(string_a, "X: %03d ", controller_report.GD_GamePadPointerX);
-    uart_puts(UART_ID, string_a);
-    sprintf(string_a, "Y: %03d ", controller_report.GD_GamePadPointerY);
-    uart_puts(UART_ID, string_a);
-    sprintf(string_a, "Z: %03d ", controller_report.GD_GamePadPointerZ);
-    uart_puts(UART_ID, string_a);
-    sprintf(string_a, "RZ: %03d ", controller_report.GD_GamePadPointerRz);
-    uart_puts(UART_ID, string_a);
-
-    sprintf(string_a, "%02x ", report[0]);
-    uart_puts(UART_ID, string_a);
-    sprintf(string_a, "%02x ", report[1]);
-    uart_puts(UART_ID, string_a);
-    sprintf(string_a, "%02x ", report[2]);
-    uart_puts(UART_ID, string_a);
-    sprintf(string_a, "%02x ", report[3]);
-    uart_puts(UART_ID, string_a);
-    sprintf(string_a, "%02x ", report[4]);
-    uart_puts(UART_ID, string_a);
-    sprintf(string_a, "%02x ", report[5]);
-    uart_puts(UART_ID, string_a);
-    sprintf(string_a, "%02x ", report[6]);
-    uart_puts(UART_ID, string_a);
-    sprintf(string_a, "%02x ", report[7]);
-    uart_puts(UART_ID, string_a);
-    sprintf(string_a, "%02x ", report[8]);
-    uart_puts(UART_ID, string_a);
-    sprintf(string_a, "%02x ", report[9]);
-    uart_puts(UART_ID, string_a);
-    sprintf(string_a, "%02x ", report[10]);
-    uart_puts(UART_ID, string_a);
-    uart_puts(UART_ID, "\n");
-    #endif
 }
 
-void GamepadUSBHostListener::process_ds4(uint8_t const* report)
+void GamepadUSBHostListener::process_egret2minipanel(uint8_t const* report)
 {
-    dualshock4_t controller_report;
+    egret2minipanel_report_t controller_report;
 
-    // previous report used to compare for changes
-    static dualshock4_t prev_report = { 0 };
+    memcpy(&controller_report, report, sizeof(controller_report));
 
-    uint8_t const report_id = report[0];
+    if (controller_report.BTN_GamePadButton1 == 1) {buttonarray |= BUTTON_MASK_B1;}else{buttonarray &= ~BUTTON_MASK_B1;} //GAMEPAD_MASK_B1;
+    if (controller_report.BTN_GamePadButton2 == 1) {buttonarray |= BUTTON_MASK_B2;}else{buttonarray &= ~BUTTON_MASK_B2;} //GAMEPAD_MASK_B2;
+    if (controller_report.BTN_GamePadButton3 == 1) {buttonarray |= BUTTON_MASK_R2;}else{buttonarray &= ~BUTTON_MASK_R2;} //GAMEPAD_MASK_R2;
+    if (controller_report.BTN_GamePadButton4 == 1) {buttonarray |= BUTTON_MASK_B3;}else{buttonarray &= ~BUTTON_MASK_B3;} //GAMEPAD_MASK_B3;
+    if (controller_report.BTN_GamePadButton5 == 1) {buttonarray |= BUTTON_MASK_B4;}else{buttonarray &= ~BUTTON_MASK_B4;} //GAMEPAD_MASK_B4;
+    if (controller_report.BTN_GamePadButton6 == 1) {buttonarray |= BUTTON_MASK_R1;}else{buttonarray &= ~BUTTON_MASK_R1;} //GAMEPAD_MASK_R1;
+    if (controller_report.BTN_GamePadButtonred == 1) {buttonarray |= BUTTON_MASK_S1;}else{buttonarray &= ~BUTTON_MASK_S1;} //GAMEPAD_MASK_S1;
+    if (controller_report.BTN_GamePadButtonblue == 1) {buttonarray |= BUTTON_MASK_S2;}else{buttonarray &= ~BUTTON_MASK_S2;} //GAMEPAD_MASK_S2;
+    if (controller_report.BTN_GamePadButtonwhite == 1) {buttonarray |= BUTTON_MASK_A1;}else{buttonarray &= ~BUTTON_MASK_A1;} //GAMEPAD_MASK_A1;
 
-    if (report_id == 1) {
+    if (controller_report.GD_GamePadPointerX == 0x00) {buttonarray |= BUTTON_MASK_LEFT;}else{buttonarray &= ~BUTTON_MASK_LEFT;} //GAMEPAD_MASK_LEFT;
+    if (controller_report.GD_GamePadPointerX == 0xff) {buttonarray |= BUTTON_MASK_RIGHT;}else{buttonarray &= ~BUTTON_MASK_RIGHT;} //GAMEPAD_MASK_RIGHT;
+    if (controller_report.GD_GamePadPointerY == 0x00) {buttonarray |= BUTTON_MASK_UP;}else{buttonarray &= ~BUTTON_MASK_UP;} //GAMEPAD_MASK_UP;
+    if (controller_report.GD_GamePadPointerY == 0xff) {buttonarray |= BUTTON_MASK_DOWN;}else{buttonarray &= ~BUTTON_MASK_DOWN;} //GAMEPAD_MASK_DOWN;
+    process_hotkey(buttonarray);
 
-        memcpy(&controller_report, report, sizeof(controller_report));
+}
 
-        if ( diff_report(&prev_report, &controller_report) ) {
-            _controller_host_state.lx = map(controller_report.GD_GamePadPointerX,0 ,255,GAMEPAD_JOYSTICK_MIN,GAMEPAD_JOYSTICK_MAX);
-            _controller_host_state.ly = map(controller_report.GD_GamePadPointerY,0 ,255,GAMEPAD_JOYSTICK_MIN,GAMEPAD_JOYSTICK_MAX);
-            _controller_host_state.rx = map(controller_report.GD_GamePadPointerZ,0 ,255,GAMEPAD_JOYSTICK_MIN,GAMEPAD_JOYSTICK_MAX);
-            _controller_host_state.ry = map(controller_report.GD_GamePadPointerRz,0 ,255,GAMEPAD_JOYSTICK_MIN,GAMEPAD_JOYSTICK_MAX);
-            _controller_host_state.lt = controller_report.SIM_GamePadBrake;
-            _controller_host_state.rt = controller_report.SIM_GamePadAccelerator;
+void GamepadUSBHostListener::process_cyberstickusb(uint8_t const* report)
+{
+    cyberstickusb_report_t controller_report;
+    uint8_t stickY, leverY;
 
-            if (controller_report.BTN_GamePadButton14 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_A2;
-            if (controller_report.BTN_GamePadButton9 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_S1;
-            if (controller_report.BTN_GamePadButton12 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_R3;
-            if (controller_report.BTN_GamePadButton11 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_L3;
-            if (controller_report.BTN_GamePadButton13 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_A1;
-            if (controller_report.BTN_GamePadButton10 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_S2;
-            if (controller_report.BTN_GamePadButton6 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_R1;
-            if (controller_report.BTN_GamePadButton5 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_L1;
-            if (controller_report.BTN_GamePadButton4 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_B4;
-            if (controller_report.BTN_GamePadButton3 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_B2;
-            if (controller_report.BTN_GamePadButton2 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_B1;
-            if (controller_report.BTN_GamePadButton1 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_B3;
-            if (controller_report.BTN_GamePadButton8 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_R2;
-            if (controller_report.BTN_GamePadButton7 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_L2;
+    memcpy(&controller_report, report, sizeof(controller_report));
 
-            if (controller_report.GD_GamePadHatSwitch == 0) _controller_host_state.dpad |= GAMEPAD_MASK_UP;
-            if (controller_report.GD_GamePadHatSwitch == 1) _controller_host_state.dpad |= GAMEPAD_MASK_UP | GAMEPAD_MASK_RIGHT;
-            if (controller_report.GD_GamePadHatSwitch == 2) _controller_host_state.dpad |= GAMEPAD_MASK_RIGHT;
-            if (controller_report.GD_GamePadHatSwitch == 3) _controller_host_state.dpad |= GAMEPAD_MASK_RIGHT | GAMEPAD_MASK_DOWN;
-            if (controller_report.GD_GamePadHatSwitch == 4) _controller_host_state.dpad |= GAMEPAD_MASK_DOWN;
-            if (controller_report.GD_GamePadHatSwitch == 5) _controller_host_state.dpad |= GAMEPAD_MASK_DOWN | GAMEPAD_MASK_LEFT;
-            if (controller_report.GD_GamePadHatSwitch == 6) _controller_host_state.dpad |= GAMEPAD_MASK_LEFT;
-            if (controller_report.GD_GamePadHatSwitch == 7) _controller_host_state.dpad |= GAMEPAD_MASK_LEFT | GAMEPAD_MASK_UP;
-        }
+    if (controller_report.BTN_GamePadButtonA == 1) {buttonarray |= BUTTON_MASK_B1;}else{buttonarray &= ~BUTTON_MASK_B1;} //GAMEPAD_MASK_B1;
+    if (controller_report.BTN_GamePadButtonB == 1) {buttonarray |= BUTTON_MASK_B2;}else{buttonarray &= ~BUTTON_MASK_B2;} //GAMEPAD_MASK_B2;
+    if (controller_report.BTN_GamePadButtonC == 1) {buttonarray |= BUTTON_MASK_B3;}else{buttonarray &= ~BUTTON_MASK_B3;} //GAMEPAD_MASK_B3;
+    if (controller_report.BTN_GamePadButtonD == 1) {buttonarray |= BUTTON_MASK_B4;}else{buttonarray &= ~BUTTON_MASK_B4;} //GAMEPAD_MASK_B4;
+    if (controller_report.BTN_GamePadButtonE1 == 1) {buttonarray |= BUTTON_MASK_R1;}else{buttonarray &= ~BUTTON_MASK_R1;} //GAMEPAD_MASK_R1;
+    if (controller_report.BTN_GamePadButtonE2 == 1) {buttonarray |= BUTTON_MASK_L1;}else{buttonarray &= ~BUTTON_MASK_L1;} //GAMEPAD_MASK_L1;
+    if (controller_report.BTN_GamePadButtonSTART == 1) {buttonarray |= BUTTON_MASK_S1;}else{buttonarray &= ~BUTTON_MASK_S1;} //GAMEPAD_MASK_S1;
+    if (controller_report.BTN_GamePadButtonSELECT == 1) {buttonarray |= BUTTON_MASK_S2;}else{buttonarray &= ~BUTTON_MASK_S2;} //GAMEPAD_MASK_S2;
+
+    // Invert Y axis for the stick if needed
+    if(cyberstickStickInvertY == CYBERSTICK_LEVER_DIRECTION_NORMAL) 
+    {
+        stickY = controller_report.GD_GamePadRightStickY;
+    }
+    else
+    {
+        stickY = 0xff - controller_report.GD_GamePadRightStickY;
+    }
+    // Invert Y axis for lever if needed
+    if(cyberstickLeverInvertY == CYBERSTICK_LEVER_DIRECTION_NORMAL) 
+    {
+        leverY = controller_report.GD_GamePadLeftLeverY;
+    }
+    else
+    {
+        leverY = 0xff - controller_report.GD_GamePadLeftLeverY;
     }
 
-    prev_report = controller_report;
-}
 
-void GamepadUSBHostListener::process_stadia(uint8_t const* report) {
-    google_stadia_report_t controller_report;
-
-    memcpy(&controller_report, report, sizeof(controller_report));
-
-    _controller_host_state.lx = map(controller_report.GD_GamePadPointerX ,1,255,GAMEPAD_JOYSTICK_MIN,GAMEPAD_JOYSTICK_MAX);
-    _controller_host_state.ly = map(controller_report.GD_GamePadPointerY,1 ,255,GAMEPAD_JOYSTICK_MIN,GAMEPAD_JOYSTICK_MAX);
-    _controller_host_state.rx = map(controller_report.GD_GamePadPointerZ,1 ,255,GAMEPAD_JOYSTICK_MIN,GAMEPAD_JOYSTICK_MAX);
-    _controller_host_state.ry = map(controller_report.GD_GamePadPointerRz,1 ,255,GAMEPAD_JOYSTICK_MIN,GAMEPAD_JOYSTICK_MAX);
-    _controller_host_state.lt = controller_report.SIM_GamePadBrake;
-    _controller_host_state.rt = controller_report.SIM_GamePadAccelerator;
-
-    if (controller_report.BTN_GamePadButton18 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_A2;
-    if (controller_report.BTN_GamePadButton11 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_S1;
-    if (controller_report.BTN_GamePadButton15 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_R3;
-    if (controller_report.BTN_GamePadButton14 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_L3;
-    if (controller_report.BTN_GamePadButton13 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_A1;
-    if (controller_report.BTN_GamePadButton12 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_S2;
-    if (controller_report.BTN_GamePadButton8 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_R1;
-    if (controller_report.BTN_GamePadButton7 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_L1;
-    if (controller_report.BTN_GamePadButton5 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_B4;
-    if (controller_report.BTN_GamePadButton4 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_B3;
-    if (controller_report.BTN_GamePadButton2 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_B2;
-    if (controller_report.BTN_GamePadButton1 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_B1;
-    if (controller_report.BTN_GamePadButton19 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_R2;
-    if (controller_report.BTN_GamePadButton20 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_L2;
-
-    if (controller_report.GD_GamePadHatSwitch == 0) _controller_host_state.dpad |= GAMEPAD_MASK_UP;
-    if (controller_report.GD_GamePadHatSwitch == 1) _controller_host_state.dpad |= GAMEPAD_MASK_UP | GAMEPAD_MASK_RIGHT;
-    if (controller_report.GD_GamePadHatSwitch == 2) _controller_host_state.dpad |= GAMEPAD_MASK_RIGHT;
-    if (controller_report.GD_GamePadHatSwitch == 3) _controller_host_state.dpad |= GAMEPAD_MASK_RIGHT | GAMEPAD_MASK_DOWN;
-    if (controller_report.GD_GamePadHatSwitch == 4) _controller_host_state.dpad |= GAMEPAD_MASK_DOWN;
-    if (controller_report.GD_GamePadHatSwitch == 5) _controller_host_state.dpad |= GAMEPAD_MASK_DOWN | GAMEPAD_MASK_LEFT;
-    if (controller_report.GD_GamePadHatSwitch == 6) _controller_host_state.dpad |= GAMEPAD_MASK_LEFT;
-    if (controller_report.GD_GamePadHatSwitch == 7) _controller_host_state.dpad |= GAMEPAD_MASK_LEFT | GAMEPAD_MASK_UP;
-}
-
-void GamepadUSBHostListener::process_ultrastik360(uint8_t const* report) {
-
-    ultrastik360_t controller_report;
-
-    memcpy(&controller_report, report, sizeof(controller_report));
-
-    _controller_host_state.lx = map(controller_report.GD_GamePadPointerX, 0, 255, GAMEPAD_JOYSTICK_MIN,GAMEPAD_JOYSTICK_MAX);
-    _controller_host_state.ly = map(controller_report.GD_GamePadPointerY, 0, 255, GAMEPAD_JOYSTICK_MIN,GAMEPAD_JOYSTICK_MAX);
-
-    if (controller_report.BTN_GamePadButton1 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_B1;
-    if (controller_report.BTN_GamePadButton2 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_B2;
-    if (controller_report.BTN_GamePadButton3 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_B3;
-    if (controller_report.BTN_GamePadButton4 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_B4;
-    if (controller_report.BTN_GamePadButton5 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_L1;
-    if (controller_report.BTN_GamePadButton6 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_L2;
-    if (controller_report.BTN_GamePadButton7 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_R1;
-    if (controller_report.BTN_GamePadButton8 == 1) _controller_host_state.buttons |= GAMEPAD_MASK_R2;
+    // Left physical stick = Right Analog. Right physical lever = Left Analog
+    if (cyberstickLever == CYBERSTICK_LEVER_NORMAL) {
+        // Left physical stick = Right Analog. Right physical lever = Left Analog
+        _controller_host_state.lx = map(controller_report.GD_GamePadRightStickX,0 ,255,GAMEPAD_JOYSTICK_MIN,GAMEPAD_JOYSTICK_MAX);
+        _controller_host_state.ly = map(stickY,0 ,255,GAMEPAD_JOYSTICK_MIN,GAMEPAD_JOYSTICK_MAX);
+        _controller_host_state.ry = map(leverY,0 ,255,GAMEPAD_JOYSTICK_MIN,GAMEPAD_JOYSTICK_MAX);
+    } else {
+        // Left physical stick = Left Analog. Right physical lever = Right Analog
+        _controller_host_state.rx = map(controller_report.GD_GamePadRightStickX,0 ,255,GAMEPAD_JOYSTICK_MIN,GAMEPAD_JOYSTICK_MAX);
+        _controller_host_state.ry = map(stickY,0 ,255,GAMEPAD_JOYSTICK_MIN,GAMEPAD_JOYSTICK_MAX);
+        _controller_host_state.ly = map(leverY,0 ,255,GAMEPAD_JOYSTICK_MIN,GAMEPAD_JOYSTICK_MAX);
+    }
 }

@@ -1,0 +1,2 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c:21:6:running_on_fpga	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c:29:9:rp2040_chip_version	8	static

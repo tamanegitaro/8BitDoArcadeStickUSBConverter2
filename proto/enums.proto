@@ -598,3 +598,17 @@ enum GPEventType
     GP_EVENT_SYSTEM_REBOOT = 13;
     GP_EVENT_MENU_NAVIGATE = 14;
 };
+
+enum CyberstickLever {
+    option (nanopb_enumopt).long_names = false;
+
+    CYBERSTICK_LEVER_NORMAL = 0;
+    CYBERSTICK_LEVER_SWAP = 1;
+};
+
+enum CyberstickLeverInvertY {
+    option (nanopb_enumopt).long_names = false;
+
+    CYBERSTICK_LEVER_DIRECTION_NORMAL = 0;
+    CYBERSTICK_LEVER_DIRECTION_INVERT = 1;
+};

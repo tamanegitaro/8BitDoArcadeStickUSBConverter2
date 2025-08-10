@@ -1,0 +1,38 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/shared/gpauthdriver.h:19:27:virtual USBListener* GPAuthDriver::getListener()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:381:15:virtual USBListener* XBOneDriver::get_usb_auth_listener()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:572:6:virtual void XBOneDriver::set_report(uint8_t, hid_report_type_t, const uint8_t*, uint16_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:600:17:virtual const uint8_t* XBOneDriver::get_descriptor_device_cb()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:604:17:virtual const uint8_t* XBOneDriver::get_hid_descriptor_report_cb(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:608:17:virtual const uint8_t* XBOneDriver::get_descriptor_configuration_cb(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:612:17:virtual const uint8_t* XBOneDriver::get_descriptor_device_qualifier_cb()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:702:10:virtual uint16_t XBOneDriver::GetJoystickMidValue()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:566:10:virtual uint16_t XBOneDriver::get_report(uint8_t, hid_report_type_t, uint8_t*, uint16_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:223:6:bool xbone_vendor_control_xfer_cb(uint8_t, uint8_t, const tusb_control_request_t*)	272	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:575:6:virtual bool XBOneDriver::vendor_control_xfer_cb(uint8_t, uint8_t, const tusb_control_request_t*)	272	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:371:6:virtual void XBOneDriver::initializeAux()	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:166:17:uint16_t xbone_open(uint8_t, const tusb_desc_interface_t*, uint16_t)	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:529:6:virtual void XBOneDriver::processAux()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/xbone/XBOneDescriptors.h:36:24:const uint8_t* xbone_get_string_descriptor(int)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/shared/driverhelper.h:4:19:uint16_t* getStringDescriptor(const char*, uint8_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:595:18:virtual const uint16_t* XBOneDriver::get_descriptor_string_cb(uint8_t, uint16_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:318:6:virtual void XBOneDriver::initialize()	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:535:6:bool XBOneDriver::getAuthSent()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:542:6:bool XBOneDriver::send_xbone_usb(const uint8_t*, uint16_t)	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:388:6:virtual bool XBOneDriver::process(Gamepad*)	80	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:616:6:void XBOneDriver::set_ack_wait()	8	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\stl_deque.h:671:5:void std::_Deque_base<_Tp, _Alloc>::_M_destroy_nodes(std::_Deque_base<_Tp, _Alloc>::_Map_pointer, std::_Deque_base<_Tp, _Alloc>::_Map_pointer) [with _Tp = report_queue_t; _Alloc = std::allocator<report_queue_t>]	16	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\stl_deque.h:593:5:std::_Deque_base<_Tp, _Alloc>::~_Deque_base() [with _Tp = report_queue_t; _Alloc = std::allocator<report_queue_t>]	8	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\deque.tcc:573:10:void std::deque<_Tp, _Alloc>::_M_pop_front_aux() [with _Tp = report_queue_t; _Alloc = std::allocator<report_queue_t>]	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:689:6:void XBOneDriver::process_report_queue(uint32_t)	80	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:150:13:void xbone_reset(uint8_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:162:13:void xbone_init()	8	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\stl_deque.h:653:5:void std::_Deque_base<_Tp, _Alloc>::_M_create_nodes(std::_Deque_base<_Tp, _Alloc>::_Map_pointer, std::_Deque_base<_Tp, _Alloc>::_Map_pointer) [with _Tp = report_queue_t; _Alloc = std::allocator<report_queue_t>]	16	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\stl_deque.h:614:5:void std::_Deque_base<_Tp, _Alloc>::_M_initialize_map(std::size_t) [with _Tp = report_queue_t; _Alloc = std::allocator<report_queue_t>]	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:704:1:void __static_initialization_and_destruction_0(int, int)	144	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\deque.tcc:928:5:void std::deque<_Tp, _Alloc>::_M_reallocate_map(std::deque<_Tp, _Alloc>::size_type, bool) [with _Tp = report_queue_t; _Alloc = std::allocator<report_queue_t>]	40	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\deque.tcc:481:7:) [with _Args = {const report_queue_t&}; _Tp = report_queue_t; _Alloc = std::allocator<report_queue_t>]	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:215:13:void queue_xbone_report(void*, uint16_t)	88	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:244:6:bool xbone_xfer_cb(uint8_t, uint8_t, xfer_result_t, uint32_t)	64	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:621:6:virtual void XBOneDriver::update()	48	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:704:1:cpp)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneDriver.cpp:704:1:cpp)	8	static

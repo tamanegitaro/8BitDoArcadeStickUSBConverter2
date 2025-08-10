@@ -1,0 +1,18 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/gpaddon.h:28:27:virtual USBListener* GPAddon::getListener()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/pleds.h:39:18:virtual void PlayerLEDAddon::preprocess()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/pleds.h:41:18:virtual void PlayerLEDAddon::postprocess(bool)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/pleds.h:42:18:virtual void PlayerLEDAddon::reinit()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/pleds.h:34:7:PlayerLEDAddon::~PlayerLEDAddon()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/pleds.h:34:7:virtual PlayerLEDAddon::~PlayerLEDAddon()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/playerleds.cpp:180:1:void __static_initialization_and_destruction_0(int, int)	112	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/playerleds.cpp:95:6:virtual bool PlayerLEDAddon::available()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/playerleds.cpp:172:6:virtual void PWMPlayerLEDs::display()	48	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/playerleds.cpp:99:6:virtual void PlayerLEDAddon::setup()	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/playerleds.cpp:39:20:PLEDAnimationState getXInputAnimationPWM(uint16_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/playerleds.cpp:123:6:virtual void PlayerLEDAddon::process()	32	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\basic_string.tcc:206:7:void std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_M_construct(_InIterator, _InIterator, std::forward_iterator_tag) [with _FwdIterator = const char*; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/pleds.h:43:25:virtual std::string PlayerLEDAddon::name()	8	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\vector.tcc:426:7:) [with _Args = {const unsigned int&}; _Tp = unsigned int; _Alloc = std::allocator<unsigned int>]	48	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/playerleds.cpp:146:6:virtual void PWMPlayerLEDs::setup()	72	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/playerleds.cpp:180:1:cpp)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/playerleds.cpp:180:1:cpp)	8	static

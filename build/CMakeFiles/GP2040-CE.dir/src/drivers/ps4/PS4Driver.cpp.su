@@ -1,0 +1,20 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/shared/gpauthdriver.h:19:27:virtual USBListener* GPAuthDriver::getListener()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/ps4/PS4Driver.cpp:371:15:virtual USBListener* PS4Driver::get_usb_auth_listener()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/ps4/PS4Driver.cpp:522:6:virtual bool PS4Driver::vendor_control_xfer_cb(uint8_t, uint8_t, const tusb_control_request_t*)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/ps4/PS4Driver.cpp:531:17:virtual const uint8_t* PS4Driver::get_descriptor_device_cb()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/ps4/PS4Driver.cpp:535:17:virtual const uint8_t* PS4Driver::get_hid_descriptor_report_cb(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/ps4/PS4Driver.cpp:539:17:virtual const uint8_t* PS4Driver::get_descriptor_configuration_cb(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/ps4/PS4Driver.cpp:543:17:virtual const uint8_t* PS4Driver::get_descriptor_device_qualifier_cb()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/ps4/PS4Driver.cpp:547:10:virtual uint16_t PS4Driver::GetJoystickMidValue()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/ps4/PS4Driver.cpp:175:6:virtual bool PS4Driver::process(Gamepad*)	48	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/ps4/PS4Driver.cpp:364:6:virtual void PS4Driver::processAux()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/ps4/PS4Driver.cpp:471:6:virtual void PS4Driver::set_report(uint8_t, hid_report_type_t, const uint8_t*, uint16_t)	96	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/shared/driverhelper.h:4:19:uint16_t* getStringDescriptor(const char*, uint8_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/ps4/PS4Driver.cpp:526:18:virtual const uint16_t* PS4Driver::get_descriptor_string_cb(uint8_t, uint16_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/ps4/PS4Driver.cpp:549:1:void __static_initialization_and_destruction_0(int, int)	112	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/ps4/PS4Driver.cpp:379:10:virtual uint16_t PS4Driver::get_report(uint8_t, hid_report_type_t, uint8_t*, uint16_t)	104	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/ps4/PS4Driver.cpp:147:6:virtual void PS4Driver::initializeAux()	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/ps4/PS4Driver.cpp:61:6:virtual void PS4Driver::initialize()	72	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/ps4/PS4Driver.cpp:164:6:bool PS4Driver::getDongleAuthRequired()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/ps4/PS4Driver.cpp:549:1:cpp)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/ps4/PS4Driver.cpp:549:1:cpp)	8	static

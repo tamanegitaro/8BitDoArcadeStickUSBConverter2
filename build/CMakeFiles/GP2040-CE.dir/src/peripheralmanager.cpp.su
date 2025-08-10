@@ -1,0 +1,13 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/peripheralmanager.cpp:109:1:void __static_initialization_and_destruction_0(int, int)	112	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/peripheralmanager.cpp:10:6:void PeripheralManager::initUSB()	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/peripheralmanager.cpp:23:6:void PeripheralManager::initI2C()	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/peripheralmanager.cpp:36:6:void PeripheralManager::initSPI()	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/peripheralmanager.cpp:42:16:PeripheralI2C* PeripheralManager::getI2C(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/peripheralmanager.cpp:49:16:PeripheralSPI* PeripheralManager::getSPI(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/peripheralmanager.cpp:56:16:PeripheralUSB* PeripheralManager::getUSB(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/peripheralmanager.cpp:63:6:bool PeripheralManager::isI2CEnabled(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/peripheralmanager.cpp:70:6:bool PeripheralManager::isSPIEnabled(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/peripheralmanager.cpp:77:6:bool PeripheralManager::isUSBEnabled(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/peripheralmanager.cpp:85:25:PeripheralI2CScanResult PeripheralManager::scanForI2CDevice(std::vector<unsigned char>)	40	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/peripheralmanager.cpp:109:1:cpp)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/peripheralmanager.cpp:109:1:cpp)	8	static

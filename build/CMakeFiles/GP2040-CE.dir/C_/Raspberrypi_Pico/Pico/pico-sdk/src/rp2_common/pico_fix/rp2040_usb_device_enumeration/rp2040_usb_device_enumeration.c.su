@@ -1,0 +1,6 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c:134:13:hw_enumeration_fix_finish	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c:78:9:hw_enumeration_fix_force_ls_j_done	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c:88:13:hw_enumeration_fix_force_ls_j	24	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c:63:13:hw_enumeration_fix_wait_se0	24	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c:45:9:hw_enumeration_fix_wait_se0_callback	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c:25:6:rp2040_usb_device_enumeration_fix	8	static

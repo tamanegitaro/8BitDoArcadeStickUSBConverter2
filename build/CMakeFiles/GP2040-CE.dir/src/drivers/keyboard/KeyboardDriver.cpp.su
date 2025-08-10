@@ -1,0 +1,27 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/keyboard/KeyboardDriver.h:17:18:virtual void KeyboardDriver::initializeAux()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/keyboard/KeyboardDriver.h:18:18:virtual void KeyboardDriver::processAux()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/keyboard/KeyboardDriver.h:28:27:virtual USBListener* KeyboardDriver::get_usb_auth_listener()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:168:6:virtual void KeyboardDriver::set_report(uint8_t, hid_report_type_t, const uint8_t*, uint16_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:171:6:virtual bool KeyboardDriver::vendor_control_xfer_cb(uint8_t, uint8_t, const tusb_control_request_t*)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:180:17:virtual const uint8_t* KeyboardDriver::get_descriptor_device_cb()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:184:17:virtual const uint8_t* KeyboardDriver::get_hid_descriptor_report_cb(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:188:17:virtual const uint8_t* KeyboardDriver::get_descriptor_configuration_cb(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:192:17:virtual const uint8_t* KeyboardDriver::get_descriptor_device_qualifier_cb()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:196:10:virtual uint16_t KeyboardDriver::GetJoystickMidValue()	0	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\std_function.h:601:7:)>::function(_Functor) [with _Functor = KeyboardDriver::initialize()::<lambda(GPEvent*)>; <template-parameter-2-2> = void; <template-parameter-2-3> = void; _Res = void; _ArgTypes = {GPEvent*}]	0	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\std_function.h:268:7:), _Functor>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation) [with _Res = void; _Functor = KeyboardDriver::initialize()::<lambda(GPEvent*)>; _ArgTypes = {GPEvent*}]	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:8:6:virtual void KeyboardDriver::initialize()	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:157:10:virtual uint16_t KeyboardDriver::get_report(uint8_t, hid_report_type_t, uint8_t*, uint16_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/shared/driverhelper.h:4:19:uint16_t* getStringDescriptor(const char*, uint8_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:175:18:virtual const uint16_t* KeyboardDriver::get_descriptor_string_cb(uint8_t, uint16_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:209:1:void __static_initialization_and_destruction_0(int, int)	112	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/eventmanager.h:35:33:void __tcf_0()	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:31:9:uint8_t KeyboardDriver::getModifier(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:46:9:uint8_t KeyboardDriver::getMultimedia(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:139:6:void KeyboardDriver::pressKey(uint8_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:149:6:void KeyboardDriver::releaseAllKeys()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:60:6:virtual bool KeyboardDriver::process(Gamepad*)	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:200:6:void KeyboardDriver::handleEncoder(GPEvent*)	0	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\std_function.h:289:7:) [with _Res = void; _Functor = KeyboardDriver::initialize()::<lambda(GPEvent*)>; _ArgTypes = {GPEvent*}]	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:209:1:cpp)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/keyboard/KeyboardDriver.cpp:209:1:cpp)	8	static

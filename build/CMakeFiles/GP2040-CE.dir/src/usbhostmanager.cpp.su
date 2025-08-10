@@ -1,0 +1,43 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPEvent.h:9:17:GPEvent::~GPEvent()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPEvent.h:11:29:virtual GPEventType GPEvent::eventType()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPUSBHostEvent.h:12:17:GPUSBHostEvent::~GPUSBHostEvent()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPUSBHostEvent.h:24:17:GPUSBHostMountEvent::~GPUSBHostMountEvent()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPUSBHostEvent.h:26:21:virtual GPEventType GPUSBHostMountEvent::eventType()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPUSBHostEvent.h:35:17:GPUSBHostUnmountEvent::~GPUSBHostUnmountEvent()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPUSBHostEvent.h:37:21:virtual GPEventType GPUSBHostUnmountEvent::eventType()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/peripheralmanager.h:22:28:void __tcf_2()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPUSBHostEvent.h:24:17:virtual GPUSBHostMountEvent::~GPUSBHostMountEvent()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPUSBHostEvent.h:12:17:virtual GPUSBHostEvent::~GPUSBHostEvent()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPEvent.h:9:17:virtual GPEvent::~GPEvent()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPUSBHostEvent.h:35:17:virtual GPUSBHostUnmountEvent::~GPUSBHostUnmountEvent()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/usbhostmanager.h:20:25:void __tcf_0()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:199:1:void __static_initialization_and_destruction_0(int, int)	112	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/eventmanager.h:35:33:void __tcf_1()	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:14:6:void USBHostManager::start()	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:28:6:void USBHostManager::shutdown()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:39:6:void USBHostManager::process()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:45:6:void USBHostManager::hid_mount_cb(uint8_t, uint8_t, const uint8_t*, uint16_t)	40	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:52:6:void USBHostManager::hid_umount_cb(uint8_t, uint8_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:59:6:void USBHostManager::hid_report_received_cb(uint8_t, uint8_t, const uint8_t*, uint16_t)	40	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:66:6:void USBHostManager::hid_set_report_complete_cb(uint8_t, uint8_t, uint8_t, uint8_t, uint16_t)	48	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:73:6:void USBHostManager::hid_get_report_complete_cb(uint8_t, uint8_t, uint8_t, uint8_t, uint16_t)	48	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:80:6:void USBHostManager::xinput_mount_cb(uint8_t, uint8_t, uint8_t, uint8_t)	40	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:87:6:void USBHostManager::xinput_umount_cb(uint8_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:94:6:void USBHostManager::xinput_report_received_cb(uint8_t, uint8_t, const uint8_t*, uint16_t)	40	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:101:6:void USBHostManager::xinput_report_sent_cb(uint8_t, uint8_t, const uint8_t*, uint16_t)	40	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:108:6:void tuh_hid_mount_cb(uint8_t, uint8_t, const uint8_t*, uint16_t)	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:116:6:void tuh_mount_cb(uint8_t)	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:125:6:void tuh_umount_cb(uint8_t)	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:135:6:void tuh_hid_umount_cb(uint8_t, uint8_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:141:6:void tuh_hid_report_received_cb(uint8_t, uint8_t, const uint8_t*, uint16_t)	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:151:6:void tuh_hid_set_report_complete_cb(uint8_t, uint8_t, uint8_t, uint8_t, uint16_t)	40	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:158:6:void tuh_hid_get_report_complete_cb(uint8_t, uint8_t, uint8_t, uint8_t, uint16_t)	40	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:165:6:void tuh_xinput_mount_cb(uint8_t, uint8_t, uint8_t, uint8_t)	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:169:6:void tuh_xinput_umount_cb(uint8_t, uint8_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:174:6:void tuh_xinput_report_received_cb(uint8_t, uint8_t, const uint8_t*, uint16_t)	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:179:6:void tuh_xinput_report_sent_cb(uint8_t, uint8_t, const uint8_t*, uint16_t)	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:196:28:const usbh_class_driver_t* usbh_app_driver_get_cb(uint8_t*)	0	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\vector.tcc:426:7:) [with _Args = {USBListener* const&}; _Tp = USBListener*; _Alloc = std::allocator<USBListener*>]	48	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:34:6:void USBHostManager::pushListener(USBListener*)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:199:1:cpp)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/usbhostmanager.cpp:199:1:cpp)	8	static

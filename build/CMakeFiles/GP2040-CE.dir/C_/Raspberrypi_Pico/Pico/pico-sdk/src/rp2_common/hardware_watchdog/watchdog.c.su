@@ -1,0 +1,8 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c:14:6:watchdog_start_tick	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c:25:6:watchdog_update	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c:30:10:watchdog_get_count	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c:36:6:_watchdog_enable	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c:70:6:watchdog_enable	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c:77:6:watchdog_reboot	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c:99:6:watchdog_caused_reboot	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c:104:6:watchdog_enable_caused_reboot	0	static

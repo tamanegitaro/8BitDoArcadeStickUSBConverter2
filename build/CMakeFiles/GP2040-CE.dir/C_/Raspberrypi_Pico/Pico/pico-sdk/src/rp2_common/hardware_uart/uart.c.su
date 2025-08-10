@@ -1,0 +1,10 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c:73:17:uart_disable_before_lcr_write	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c:116:13:uart_write_lcr_bits_masked	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c:68:6:uart_deinit	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c:128:6:uart_set_baudrate	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c:156:6:uart_set_format	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c:172:6:uart_set_fifo_enabled	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c:183:6:uart_set_break	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c:194:6:uart_set_translate_crlf	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c:39:6:uart_init	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c:202:6:uart_is_readable_within_us	0	static

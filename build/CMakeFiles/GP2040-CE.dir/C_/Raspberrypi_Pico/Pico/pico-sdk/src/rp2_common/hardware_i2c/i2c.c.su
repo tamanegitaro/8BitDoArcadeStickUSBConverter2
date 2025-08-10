@@ -1,0 +1,12 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:133:12:i2c_write_blocking_internal	56	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:258:12:i2c_read_blocking_internal	48	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:58:6:i2c_deinit	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:62:6:i2c_set_baudrate	32	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:32:6:i2c_init	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:112:6:i2c_set_slave_mode	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:241:5:i2c_write_blocking	32	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:245:5:i2c_write_blocking_until	64	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:251:5:i2c_write_timeout_per_char_us	64	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:321:5:i2c_read_blocking	32	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:325:5:i2c_read_blocking_until	64	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:330:5:i2c_read_timeout_per_char_us	64	static

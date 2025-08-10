@@ -1,0 +1,19 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/hid/HIDDriver.h:16:18:virtual void HIDDriver::initializeAux()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/hid/HIDDriver.h:17:18:virtual void HIDDriver::processAux()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/hid/HIDDriver.h:27:27:virtual USBListener* HIDDriver::get_usb_auth_listener()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/hid/HIDDriver.cpp:16:6:virtual void HIDDriver::initialize()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/hid/HIDDriver.cpp:121:6:virtual void HIDDriver::set_report(uint8_t, hid_report_type_t, const uint8_t*, uint16_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/hid/HIDDriver.cpp:124:6:virtual bool HIDDriver::vendor_control_xfer_cb(uint8_t, uint8_t, const tusb_control_request_t*)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/hid/HIDDriver.cpp:167:17:virtual const uint8_t* HIDDriver::get_hid_descriptor_report_cb(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/hid/HIDDriver.cpp:171:17:virtual const uint8_t* HIDDriver::get_descriptor_configuration_cb(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/hid/HIDDriver.cpp:175:17:virtual const uint8_t* HIDDriver::get_descriptor_device_qualifier_cb()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/hid/HIDDriver.cpp:179:10:virtual uint16_t HIDDriver::GetJoystickMidValue()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/hid/HIDDriver.cpp:11:13:bool hid_control_xfer_cb(uint8_t, uint8_t, const tusb_control_request_t*)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/hid/HIDDriver.cpp:115:10:virtual uint16_t HIDDriver::get_report(uint8_t, hid_report_type_t, uint8_t*, uint16_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/hid/HIDDriver.cpp:38:6:virtual bool HIDDriver::process(Gamepad*)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/shared/driverhelper.h:4:19:uint16_t* getStringDescriptor(const char*, uint8_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/hid/HIDDriver.cpp:128:18:virtual const uint16_t* HIDDriver::get_descriptor_string_cb(uint8_t, uint16_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/hid/HIDDriver.cpp:181:1:void __static_initialization_and_destruction_0(int, int)	112	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/hid/HIDDriver.cpp:153:17:virtual const uint8_t* HIDDriver::get_descriptor_device_cb()	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/hid/HIDDriver.cpp:181:1:cpp)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/hid/HIDDriver.cpp:181:1:cpp)	8	static

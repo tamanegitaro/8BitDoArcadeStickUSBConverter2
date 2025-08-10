@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=git
-command=C:/Raspberrypi_Pico/Pico/cmake/bin/cmake.exe;-P;C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/_deps/arduinojson-subbuild/arduinojson-populate-prefix/tmp/arduinojson-populate-gitclone.cmake
-source_dir=C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/_deps/arduinojson-src
-work_dir=C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/_deps
+command=C:/Raspberrypi_Pico/Pico/cmake/bin/cmake.exe;-P;C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/_deps/arduinojson-subbuild/arduinojson-populate-prefix/tmp/arduinojson-populate-gitclone.cmake
+source_dir=C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/_deps/arduinojson-src
+work_dir=C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/_deps
 repository=https://github.com/bblanchon/ArduinoJson.git
 remote=origin
 init_submodules=TRUE

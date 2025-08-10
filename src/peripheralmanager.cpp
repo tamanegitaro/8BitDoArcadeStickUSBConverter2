@@ -1,14 +1,35 @@
 #include "peripheralmanager.h"
 #include "storagemanager.h"
 
+#if 0
+#define UART_ID uart1
+#define BAUD_RATE 115200
+extern char string_a[100];
+#endif
+
 void PeripheralManager::initUSB(){
     const PeripheralOptions& peripheralOptions = Storage::getInstance().getPeripheralOptions();
-    if (peripheralOptions.blockUSB0.enabled) blockUSB0.setConfig(0, peripheralOptions.blockUSB0.dp, peripheralOptions.blockUSB0.enable5v, peripheralOptions.blockUSB0.order);
+#if 0
+    sprintf(string_a, "en: %02d dp: %02d 5v: %02d order: %02d ", peripheralOptions.blockUSB0.enabled, peripheralOptions.blockUSB0.dp, peripheralOptions.blockUSB0.enable5v, peripheralOptions.blockUSB0.order);
+    uart_puts(UART_ID, string_a);
+    uart_puts(UART_ID, "\n");
+#endif
+    //en: 01 dp: 28 5v: -1 order: 00
+    //if (peripheralOptions.blockUSB0.enabled) blockUSB0.setConfig(0, peripheralOptions.blockUSB0.dp, peripheralOptions.blockUSB0.enable5v, peripheralOptions.blockUSB0.order);
+    blockUSB0.setConfig(0, 28, -1, 0);
 }
+
 
 void PeripheralManager::initI2C(){
     const PeripheralOptions& peripheralOptions = Storage::getInstance().getPeripheralOptions();
-    if (peripheralOptions.blockI2C0.enabled) blockI2C0.setConfig(0, peripheralOptions.blockI2C0.sda, peripheralOptions.blockI2C0.scl, peripheralOptions.blockI2C0.speed);
+#if 0
+    sprintf(string_a, "en: %02d sda: %02d scl: %02d speed: %02d ", peripheralOptions.blockI2C0.enabled, peripheralOptions.blockI2C0.sda, peripheralOptions.blockI2C0.scl, peripheralOptions.blockI2C0.speed);
+    uart_puts(UART_ID, string_a);
+    uart_puts(UART_ID, "\n");
+#endif    
+    //en: 01 sda: 00 scl: 01 speed: 400000
+    //if (peripheralOptions.blockI2C0.enabled) blockI2C0.setConfig(0, peripheralOptions.blockI2C0.sda, peripheralOptions.blockI2C0.scl, peripheralOptions.blockI2C0.speed);
+    blockI2C0.setConfig(0, 0, 1, 400000);
     if (peripheralOptions.blockI2C1.enabled) blockI2C1.setConfig(1, peripheralOptions.blockI2C1.sda, peripheralOptions.blockI2C1.scl, peripheralOptions.blockI2C1.speed); 
 }
 
@@ -55,7 +76,8 @@ bool PeripheralManager::isSPIEnabled(uint8_t block) {
 
 bool PeripheralManager::isUSBEnabled(uint8_t block) {
     if (block < NUM_USBS) {
-        return (((block == 0) ? blockUSB0.configured : false));
+//        return (((block == 0) ? blockUSB0.configured : false));
+        return 1; //USB enabled
     }
     return false;
 }

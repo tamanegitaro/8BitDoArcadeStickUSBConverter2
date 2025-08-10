@@ -1,0 +1,40 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPEvent.h:9:17:GPEvent::~GPEvent()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPEvent.h:11:29:virtual GPEventType GPEvent::eventType()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPStorageSaveEvent.h:13:17:GPStorageSaveEvent::~GPStorageSaveEvent()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPStorageSaveEvent.h:15:21:virtual GPEventType GPStorageSaveEvent::eventType()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPStorageSaveEvent.h:13:17:virtual GPStorageSaveEvent::~GPStorageSaveEvent()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPEvent.h:9:17:virtual GPEvent::~GPEvent()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/eventmanager.h:35:33:void __tcf_0()	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:13:1:AnimationStation::AnimationStation()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:26:6:void AnimationStation::ConfigureBrightness(uint8_t, uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:101:10:uint16_t AnimationStation::AdjustIndex(int)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:123:6:void AnimationStation::ClearPressed()	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:151:6:void AnimationStation::Clear()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:134:6:void AnimationStation::Animate()	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:155:7:float AnimationStation::GetBrightnessX()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:159:7:float AnimationStation::GetLinkageModeOfBrightnessX()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:163:9:uint8_t AnimationStation::GetBrightness()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:168:6:void AnimationStation::SetMode(uint8_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:97:6:void AnimationStation::ChangeAnimation(int)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:211:6:void AnimationStation::ApplyBrightness(uint32_t*)	40	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:216:6:void AnimationStation::SetBrightness(uint8_t)	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:234:6:void AnimationStation::DecreaseBrightness()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:240:6:void AnimationStation::IncreaseBrightness()	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:31:6:void AnimationStation::HandleEvent(GamepadHotkey)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:248:6:void AnimationStation::DimBrightnessTo0()	0	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\stl_vector.h:333:7:std::_Vector_base<_Tp, _Alloc>::~_Vector_base() [with _Tp = unsigned char; _Alloc = std::allocator<unsigned char>]	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:250:1:void __static_initialization_and_destruction_0(int, int)	112	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\stl_iterator.h:1225:5:_Iterator std::__niter_base(__gnu_cxx::__normal_iterator<_Iterator, _Container>) [with _Iterator = const std::vector<Pixel>*; _Container = std::vector<std::vector<Pixel> >]	0	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\stl_iterator.h:1225:5:_Iterator std::__niter_base(__gnu_cxx::__normal_iterator<_Iterator, _Container>) [with _Iterator = std::vector<Pixel>*; _Container = std::vector<std::vector<Pixel> >]	0	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\stl_iterator.h:1225:5:_Iterator std::__niter_base(__gnu_cxx::__normal_iterator<_Iterator, _Container>) [with _Iterator = const Pixel*; _Container = std::vector<Pixel>]	0	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\stl_iterator.h:1225:5:_Iterator std::__niter_base(__gnu_cxx::__normal_iterator<_Iterator, _Container>) [with _Iterator = Pixel*; _Container = std::vector<Pixel>]	0	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\stl_iterator.h:1225:5:_Iterator std::__niter_base(__gnu_cxx::__normal_iterator<_Iterator, _Container>) [with _Iterator = const unsigned char*; _Container = std::vector<unsigned char>]	0	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\stl_vector.h:553:7:std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = Pixel; _Alloc = std::allocator<Pixel>]	40	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\stl_iterator.h:1225:5:_Iterator std::__niter_base(__gnu_cxx::__normal_iterator<_Iterator, _Container>) [with _Iterator = unsigned char*; _Container = std::vector<unsigned char>]	0	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\vector.tcc:198:5:std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = unsigned char; _Alloc = std::allocator<unsigned char>]	32	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\vector.tcc:198:5:std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = Pixel; _Alloc = std::allocator<Pixel>]	48	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:117:6:void AnimationStation::HandlePressed(std::vector<Pixel>)	48	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\vector.tcc:198:5:std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = std::vector<Pixel>; _Alloc = std::allocator<std::vector<Pixel> >]	40	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:207:6:void AnimationStation::SetMatrix(PixelMatrix)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:250:1:cpp)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/animationstation/animationstation.cpp:250:1:cpp)	8	static

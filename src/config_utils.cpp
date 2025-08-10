@@ -827,6 +827,9 @@ void ConfigUtils::initUnsetPropertiesWithDefaults(Config& config)
 
     // addonOptions.gamepadUSBHostOptions
     INIT_UNSET_PROPERTY(config.addonOptions.gamepadUSBHostOptions, enabled, GAMEPAD_USB_HOST_ENABLED)
+    INIT_UNSET_PROPERTY(config.addonOptions.gamepadUSBHostOptions, cyberstickLever, CYBERSTICK_LEVER_NORMAL);
+    INIT_UNSET_PROPERTY(config.addonOptions.gamepadUSBHostOptions, cyberstickLeverInvertY, CYBERSTICK_LEVER_DIRECTION_NORMAL);
+    INIT_UNSET_PROPERTY(config.addonOptions.gamepadUSBHostOptions, cyberstickStickInvertY, CYBERSTICK_LEVER_DIRECTION_NORMAL);
 
     // Macro options (always on)
     INIT_UNSET_PROPERTY(config.addonOptions.macroOptions, enabled, true);

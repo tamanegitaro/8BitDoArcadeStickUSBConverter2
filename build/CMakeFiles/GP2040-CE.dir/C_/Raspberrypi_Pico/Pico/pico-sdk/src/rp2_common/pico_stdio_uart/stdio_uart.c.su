@@ -1,0 +1,8 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c:84:13:stdio_uart_out_chars	32	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c:90:5:stdio_uart_in_chars	32	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c:105:13:on_uart_rx	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c:113:13:stdio_uart_set_chars_available_callback	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c:76:6:stdio_uart_init_full	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c:25:6:stdio_uart_init	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c:52:6:stdout_uart_init	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c:64:6:stdin_uart_init	8	static

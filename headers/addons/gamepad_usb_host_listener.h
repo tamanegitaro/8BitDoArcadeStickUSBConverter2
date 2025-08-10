@@ -27,10 +27,10 @@ typedef struct TU_ATTR_PACKED
     int8_t   : 1;                                      // Pad
     int8_t   : 1;                                      // Pad
     int8_t   : 1;                                      // Pad
-    uint8_t   GD_GamePadDpadDown  : 1;                  // Down
-    uint8_t   GD_GamePadDpadUp    : 1;                  // Up
-    uint8_t   GD_GamePadDpadRight : 1;                  // Right
-    uint8_t   GD_GamePadDpadLeft  : 1;                  // Left
+    uint8_t  GD_GamePadDpadDown  : 1;                  // Down
+    uint8_t  GD_GamePadDpadUp    : 1;                  // Up
+    uint8_t  GD_GamePadDpadRight : 1;                  // Right
+    uint8_t  GD_GamePadDpadLeft  : 1;                  // Left
     int8_t   : 1;                                      // Pad
     int8_t   : 1;                                      // Pad
     uint8_t  BTN_GamePadButton12 : 1;                  // Usage L1
@@ -48,6 +48,52 @@ typedef struct TU_ATTR_PACKED
     uint8_t  VEN_Pad[52];                              // Pad... Total of 64 bytes
 } ebitdoarcade_report_t;
 
+// Egret 2 mini panel report
+typedef struct TU_ATTR_PACKED
+{
+// Red Blue
+//   White      4 5 6
+//              1 2 3
+    uint8_t  BTN_GamePadButton6  : 1;
+    uint8_t  BTN_GamePadButton3  : 1;
+    uint8_t  BTN_GamePadButton2  : 1;
+    uint8_t  BTN_GamePadButton5  : 1;
+    uint8_t  BTN_GamePadButton1  : 1;
+    int8_t   : 1;                                      // Pad
+    uint8_t  BTN_GamePadButtonred  : 1;
+    uint8_t  BTN_GamePadButtonblue  : 1;
+
+    uint8_t  BTN_GamePadButton4  : 1;
+    uint8_t  BTN_GamePadButtonwhite  : 1;
+    int8_t   : 1;                                      // Pad
+    int8_t   : 1;                                      // Pad
+    int8_t   : 1;                                      // Pad
+    int8_t   : 1;                                      // Pad
+    int8_t   : 1;                                      // Pad
+    int8_t   : 1;                                      // Pad
+
+    uint8_t  GD_GamePadPointerX : 8;                  // Usage X, Value = 0 to 255
+    uint8_t  GD_GamePadPointerY : 8;                  // Usage Y, Value = 0 to 255
+} egret2minipanel_report_t;
+
+// Cyber Stick USB report
+typedef struct TU_ATTR_PACKED
+{
+    uint8_t  BTN_GamePadButtonA  : 1;
+    uint8_t  BTN_GamePadButtonB  : 1;
+    uint8_t  BTN_GamePadButtonC  : 1;
+    uint8_t  BTN_GamePadButtonD  : 1;
+    uint8_t  BTN_GamePadButtonE1 : 1;
+    uint8_t  BTN_GamePadButtonE2 : 1;
+    uint8_t  BTN_GamePadButtonSELECT : 1;
+    uint8_t  BTN_GamePadButtonSTART  : 1;
+    uint8_t  : 8;                                      // Pad
+    uint8_t  : 8;                                      // Pad
+    uint8_t  GD_GamePadRightStickX : 8;                // Usage X, Value = 0 to 255
+    uint8_t  GD_GamePadRightStickY : 8;                // Usage Y, Value = 0 to 255
+    uint8_t  : 8;                                      // Pad
+    uint8_t  GD_GamePadLeftLeverY : 8;                 // Usage Y, Value = 0 to 255
+} cyberstickusb_report_t;
 
 // Google Stadia controller report struct
 typedef struct TU_ATTR_PACKED
@@ -173,13 +219,12 @@ class GamepadUSBHostListener : public USBListener {
         bool _controller_host_enabled;
         void process_ctrlr_report(uint8_t dev_addr, uint8_t const* report, uint16_t len);
 
-        void process_8bitdoarcade_hotkey(void);
+        void process_hotkey(uint32_t buttonarray);
         
         // Controller report processor functions
         void process_8bitdoarcade(uint8_t const* report);
-        void process_ds4(uint8_t const* report);
-        void process_stadia(uint8_t const* report);
-        void process_ultrastik360(uint8_t const* report);
+        void process_egret2minipanel(uint8_t const* report);
+        void process_cyberstickusb(uint8_t const* report);
 
         uint16_t controller_pid, controller_vid;
 

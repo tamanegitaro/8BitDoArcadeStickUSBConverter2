@@ -1,0 +1,3 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c:11:7:rom_func_lookup	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c:15:7:rom_data_lookup	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c:22:6:rom_funcs_lookup	24	static

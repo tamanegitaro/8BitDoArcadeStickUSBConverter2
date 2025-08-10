@@ -48,7 +48,17 @@ static const uint32_t REBOOT_HOTKEY_HOLD_TIME_MS = 4000;
 const static uint32_t rebootDelayMs = 500;
 static absolute_time_t rebootDelayTimeout = nil_time;
 
+//#define UART_ID uart1
+//#define BAUD_RATE 115200
+//#define UART_TX_PIN 4
+//#define UART_RX_PIN 5
+//char string_a[100];
+
+volatile uint32_t buttonarray = 0;
+
 void GP2040::setup() {
+	buttonarray = 0;
+
 	Storage::getInstance().init();
 
 	PeripheralManager::getInstance().initI2C();
@@ -59,6 +69,12 @@ void GP2040::setup() {
 	if ( PeripheralManager::getInstance().isUSBEnabled(0) ) {
 		set_sys_clock_khz(120000, true); // Set Clock to 120MHz to avoid potential USB timing issues
 	}
+
+    // Set up our UART with the required speed.
+    //uart_init(UART_ID, BAUD_RATE);
+    //gpio_set_function(UART_TX_PIN, GPIO_FUNC_UART);
+    //gpio_set_function(UART_RX_PIN, GPIO_FUNC_UART);
+    //uart_puts(UART_ID, " Hello, UART!\n");
 
 	Gamepad * gamepad = new Gamepad();
 	Gamepad * processedGamepad = new Gamepad();
@@ -73,7 +89,7 @@ void GP2040::setup() {
 	
 	// now we can load the latest configured profile, which will map the
 	// new set of GPIOs to use...
-    this->initializeStandardGpio();
+    //this->initializeStandardGpio();
 
     const GamepadOptions& gamepadOptions = Storage::getInstance().getGamepadOptions();
 
@@ -236,18 +252,12 @@ void GP2040::deinitializeStandardGpio() {
  * instead, if you don't want debounced data.
  */
 void GP2040::debounceGpioGetAll() {
-	Mask_t raw_gpio = ~gpio_get_all();
 	Gamepad* gamepad = Storage::getInstance().GetGamepad();
-	// return if state isn't different than the actual
-	if (gamepad->debouncedGpio == (raw_gpio & buttonGpios)) return;
 
-	uint32_t debounceDelay = Storage::getInstance().getGamepadOptions().debounceDelay;
-	// abort if no delay is configured
-	if (debounceDelay == 0) {
-		gamepad->debouncedGpio = raw_gpio;
-		return;
-	}
+	gamepad->debouncedGpio = buttonarray;
+	return;
 
+#if 0
 	uint32_t now = getMillis();
 	// check each button use case GPIO for state
 	for (Pin_t pin = 0; pin < (Pin_t)NUM_BANK0_GPIOS; pin++) {
@@ -261,6 +271,7 @@ void GP2040::debounceGpioGetAll() {
 			}
 		}
 	}
+#endif
 }
 
 void GP2040::run() {
@@ -333,14 +344,14 @@ void GP2040::getReinitGamepad(Gamepad * gamepad) {
 		// we are moving off of them and onto potentially different pin assignments
 		// we currently don't support ASSIGNED_TO_ADDON pins being reinitialized,
 		// but if they were to be, that'd be the addon's duty, not ours
-		this->deinitializeStandardGpio();
+		//this->deinitializeStandardGpio();
 
 		// now we can load the latest configured profile, which will map the
 		// new set of GPIOs to use...
 		Storage::getInstance().setFunctionalPinMappings();
 
 		// ...and initialize the pins again
-		this->initializeStandardGpio();
+		//this->initializeStandardGpio();
 
 		// now we can tell the gamepad that the new mappings are in place
 		// and ready to use, and the pins are ready, so it should reinitialize itself

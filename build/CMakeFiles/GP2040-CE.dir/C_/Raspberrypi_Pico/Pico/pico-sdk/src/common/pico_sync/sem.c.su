@@ -1,0 +1,9 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/common/pico_sync/sem.c:10:6:sem_init	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/common/pico_sync/sem.c:17:5:sem_available	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/common/pico_sync/sem.c:26:6:sem_acquire_blocking	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/common/pico_sync/sem.c:46:6:sem_acquire_block_until	24	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/common/pico_sync/sem.c:38:6:sem_acquire_timeout_ms	24	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/common/pico_sync/sem.c:42:6:sem_acquire_timeout_us	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/common/pico_sync/sem.c:60:6:sem_try_acquire	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/common/pico_sync/sem.c:72:6:sem_release	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/common/pico_sync/sem.c:85:6:sem_reset	8	static

@@ -1,0 +1,5 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/shared/gpauthdriver.h:19:27:virtual USBListener* GPAuthDriver::getListener()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneAuth.cpp:14:6:virtual void XBOneAuth::initialize()	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/peripheralmanager.h:22:28:void __tcf_0()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneAuth.cpp:24:6:virtual bool XBOneAuth::available()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/xbone/XBOneAuth.cpp:28:6:void XBOneAuth::process()	8	static

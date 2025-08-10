@@ -1,0 +1,17 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/portable/raspberrypi/pio_usb/hcd_pio_usb.c:161:13:handle_endpoint_irq	56	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/portable/raspberrypi/pio_usb/hcd_pio_usb.c:51:6:hcd_configure	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/portable/raspberrypi/pio_usb/hcd_pio_usb.c:58:6:hcd_init	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/portable/raspberrypi/pio_usb/hcd_pio_usb.c:67:6:hcd_port_reset	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/portable/raspberrypi/pio_usb/hcd_pio_usb.c:72:6:hcd_port_reset_end	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/portable/raspberrypi/pio_usb/hcd_pio_usb.c:77:6:hcd_port_connect_status	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/portable/raspberrypi/pio_usb/hcd_pio_usb.c:86:14:hcd_port_speed_get	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/portable/raspberrypi/pio_usb/hcd_pio_usb.c:93:6:hcd_device_close	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/portable/raspberrypi/pio_usb/hcd_pio_usb.c:98:10:hcd_frame_number	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/portable/raspberrypi/pio_usb/hcd_pio_usb.c:103:6:hcd_int_enable	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/portable/raspberrypi/pio_usb/hcd_pio_usb.c:107:6:hcd_int_disable	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/portable/raspberrypi/pio_usb/hcd_pio_usb.c:115:6:hcd_edpt_open	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/portable/raspberrypi/pio_usb/hcd_pio_usb.c:124:6:hcd_edpt_xfer	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/portable/raspberrypi/pio_usb/hcd_pio_usb.c:129:6:hcd_edpt_abort_xfer	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/portable/raspberrypi/pio_usb/hcd_pio_usb.c:134:6:hcd_setup_send	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/portable/raspberrypi/pio_usb/hcd_pio_usb.c:153:6:hcd_edpt_clear_stall	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/portable/raspberrypi/pio_usb/hcd_pio_usb.c:180:6:pio_usb_host_irq_handler	32	static

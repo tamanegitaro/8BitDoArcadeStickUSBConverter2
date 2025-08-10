@@ -1,0 +1,7 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c:34:13:flash_init_boot2_copyout	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c:43:13:flash_enable_xip_via_boot2	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c:114:13:flash_cs_force	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c:63:6:flash_range_erase	32	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c:86:6:flash_range_program	40	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c:124:6:flash_do_cmd	32	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c:164:6:flash_get_unique_id	48	static

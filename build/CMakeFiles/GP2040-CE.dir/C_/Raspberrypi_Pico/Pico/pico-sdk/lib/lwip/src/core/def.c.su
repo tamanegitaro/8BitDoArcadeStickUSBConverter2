@@ -1,0 +1,7 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/lib/lwip/src/core/def.c:76:1:lwip_htons	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/lib/lwip/src/core/def.c:90:1:lwip_htonl	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/lib/lwip/src/core/def.c:105:1:lwip_strnstr	32	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/lib/lwip/src/core/def.c:151:1:lwip_stricmp	12	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/lib/lwip/src/core/def.c:186:1:lwip_strnicmp	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/lib/lwip/src/core/def.c:128:1:lwip_strnistr	24	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/lib/lwip/src/core/def.c:222:1:lwip_itoa	24	static

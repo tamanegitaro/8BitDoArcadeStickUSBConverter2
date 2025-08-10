@@ -1,0 +1,16 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/keyboard_host_listener.h:30:18:virtual void KeyboardHostListener::xmount(uint8_t, uint8_t, uint8_t, uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/keyboard_host_listener.h:33:18:virtual void KeyboardHostListener::report_sent(uint8_t, uint8_t, const uint8_t*, uint16_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/keyboard_host_listener.h:34:18:virtual void KeyboardHostListener::set_report_complete(uint8_t, uint8_t, uint8_t, uint8_t, uint16_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/keyboard_host_listener.h:35:18:virtual void KeyboardHostListener::get_report_complete(uint8_t, uint8_t, uint8_t, uint8_t, uint16_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/keyboard_host_listener.cpp:96:6:virtual void KeyboardHostListener::mount(uint8_t, uint8_t, const uint8_t*, uint16_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/keyboard_host_listener.cpp:238:1:void __static_initialization_and_destruction_0(int, int)	112	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/keyboard_host_listener.cpp:8:6:virtual void KeyboardHostListener::setup()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/keyboard_host_listener.cpp:114:6:virtual void KeyboardHostListener::unmount(uint8_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/keyboard_host_listener.cpp:69:6:void KeyboardHostListener::process()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/keyboard_host_listener.cpp:141:9:uint8_t KeyboardHostListener::getKeycodeFromModifier(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/keyboard_host_listener.cpp:156:6:void KeyboardHostListener::preprocess_report()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/keyboard_host_listener.cpp:174:6:void KeyboardHostListener::process_kbd_report(uint8_t, const hid_keyboard_report_t*)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/keyboard_host_listener.cpp:222:6:void KeyboardHostListener::process_mouse_report(uint8_t, const hid_mouse_report_t*)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/keyboard_host_listener.cpp:128:6:virtual void KeyboardHostListener::report_received(uint8_t, uint8_t, const uint8_t*, uint16_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/keyboard_host_listener.cpp:238:1:cpp)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/keyboard_host_listener.cpp:238:1:cpp)	8	static

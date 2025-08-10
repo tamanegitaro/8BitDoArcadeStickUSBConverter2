@@ -1,4 +1,4 @@
-# Install script for directory: C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/lib
+# Install script for directory: C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,19 +39,19 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/lib/ADS1219/cmake_install.cmake")
-  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/lib/ADS1256/cmake_install.cmake")
-  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/lib/CRC32/cmake_install.cmake")
-  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/lib/FlashPROM/cmake_install.cmake")
-  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/lib/httpd/cmake_install.cmake")
-  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/lib/lwip-port/cmake_install.cmake")
-  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/lib/nanopb/cmake_install.cmake")
-  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/lib/NeoPico/cmake_install.cmake")
-  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/lib/OneBitDisplay/cmake_install.cmake")
-  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/lib/PicoPeripherals/cmake_install.cmake")
-  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/lib/rndis/cmake_install.cmake")
-  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/lib/WiiExtension/cmake_install.cmake")
-  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo4/GP2040-CE/build/lib/SNESpad/cmake_install.cmake")
+  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/lib/ADS1219/cmake_install.cmake")
+  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/lib/ADS1256/cmake_install.cmake")
+  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/lib/CRC32/cmake_install.cmake")
+  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/lib/FlashPROM/cmake_install.cmake")
+  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/lib/httpd/cmake_install.cmake")
+  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/lib/lwip-port/cmake_install.cmake")
+  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/lib/nanopb/cmake_install.cmake")
+  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/lib/NeoPico/cmake_install.cmake")
+  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/lib/OneBitDisplay/cmake_install.cmake")
+  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/lib/PicoPeripherals/cmake_install.cmake")
+  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/lib/rndis/cmake_install.cmake")
+  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/lib/WiiExtension/cmake_install.cmake")
+  include("C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/build/lib/SNESpad/cmake_install.cmake")
 
 endif()
 

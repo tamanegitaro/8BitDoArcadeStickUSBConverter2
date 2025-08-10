@@ -1,0 +1,5 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/lib/mbedtls/library/rsa_internal.c:62:5:mbedtls_rsa_deduce_primes	120	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/lib/mbedtls/library/rsa_internal.c:197:5:mbedtls_rsa_deduce_private_exponent	48	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/lib/mbedtls/library/rsa_internal.c:243:5:mbedtls_rsa_validate_crt	56	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/lib/mbedtls/library/rsa_internal.c:331:5:mbedtls_rsa_validate_params	48	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/lib/mbedtls/library/rsa_internal.c:452:5:mbedtls_rsa_deduce_crt	48	static

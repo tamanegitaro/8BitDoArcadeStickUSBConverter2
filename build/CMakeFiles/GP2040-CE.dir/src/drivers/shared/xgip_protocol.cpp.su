@@ -1,0 +1,20 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:35:1:XGIPProtocol::~XGIPProtocol()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:39:6:void XGIPProtocol::reset()	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:30:1:XGIPProtocol::XGIPProtocol()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:56:6:bool XGIPProtocol::parse(const uint8_t*, uint16_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:140:6:bool XGIPProtocol::endOfChunk()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:144:6:bool XGIPProtocol::validate()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:148:6:void XGIPProtocol::incrementSequence()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:154:6:void XGIPProtocol::setAttributes(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:162:6:bool XGIPProtocol::setData(const uint8_t*, uint16_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:172:11:uint8_t* XGIPProtocol::generatePacket()	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:298:11:uint8_t* XGIPProtocol::generateAckPacket()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:326:9:uint8_t XGIPProtocol::getPacketLength()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:331:9:uint8_t XGIPProtocol::getPacketAck()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:336:9:uint8_t XGIPProtocol::getCommand()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:341:9:uint8_t XGIPProtocol::getChunked()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:346:9:uint8_t XGIPProtocol::getSequence()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:351:11:uint8_t* XGIPProtocol::getData()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:356:10:uint16_t XGIPProtocol::getDataLength()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:361:6:bool XGIPProtocol::getChunkData(XGIPProtocol&)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xgip_protocol.cpp:366:6:bool XGIPProtocol::ackRequired()	0	static

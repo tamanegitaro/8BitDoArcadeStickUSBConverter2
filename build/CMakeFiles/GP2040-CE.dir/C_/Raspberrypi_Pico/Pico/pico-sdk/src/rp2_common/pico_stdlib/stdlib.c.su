@@ -1,0 +1,4 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c:17:6:set_sys_clock_48mhz	16	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c:48:6:set_sys_clock_pll	32	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c:88:6:check_sys_clock_khz	48	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c:108:6:setup_default_uart	8	static

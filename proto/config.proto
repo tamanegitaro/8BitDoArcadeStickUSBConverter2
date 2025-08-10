@@ -734,6 +734,9 @@ message KeyboardHostOptions
 message GamepadUSBHostOptions
 {
     optional bool enabled = 1;
+    optional uint32 cyberstickLever = 2;
+    optional uint32 cyberstickStickInvertY = 3;
+    optional uint32 cyberstickLeverInvertY = 4;
 }
 
 message FocusModeOptions

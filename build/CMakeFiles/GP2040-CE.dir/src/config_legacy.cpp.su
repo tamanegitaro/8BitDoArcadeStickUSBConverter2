@@ -1,0 +1,16 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/config_legacy.cpp:480:13:bool isValidInputMode(ConfigLegacy::InputMode)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/config_legacy.cpp:496:13:bool isValidDpadMode(ConfigLegacy::DpadMode)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/config_legacy.cpp:508:13:bool isValidSOCDMode(ConfigLegacy::SOCDMode)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/config_legacy.cpp:522:13:bool isValidGamepadHotkey(ConfigLegacy::GamepadHotkey)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/config_legacy.cpp:544:13:bool isValidButtonLayout(ConfigLegacy::ButtonLayout)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/config_legacy.cpp:571:13:bool isValidButtonLayoutRight(ConfigLegacy::ButtonLayoutRight)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/config_legacy.cpp:603:13:bool isValidLEDFormat(LEDFormat)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/config_legacy.cpp:616:13:bool isValidPLEDType(PLEDType)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/config_legacy.cpp:628:13:bool isValidOnBoardLedMode(ConfigLegacy::OnBoardLedMode)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/config_legacy.cpp:640:13:bool isValidSplashMode(ConfigLegacy::SplashMode)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/config_legacy.cpp:653:13:bool isValidSplashChoice(ConfigLegacy::SplashChoice)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/config_legacy.cpp:463:17:uint32_t computeChecksum(const char*, size_t, size_t)	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/config_legacy.cpp:1117:1:void __static_initialization_and_destruction_0(int, int)	112	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/config_legacy.cpp:668:6:bool ConfigUtils::fromLegacyStorage(Config&)	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/config_legacy.cpp:1117:1:cpp)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/config_legacy.cpp:1117:1:cpp)	8	static

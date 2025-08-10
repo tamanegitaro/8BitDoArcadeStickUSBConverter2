@@ -1,0 +1,15 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xinput_host.cpp:348:16:uint8_t get_instance_id_by_itfnum(uint8_t, uint8_t)	12	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xinput_host.cpp:357:16:uint8_t get_instance_id_by_epaddr(uint8_t, uint8_t)	12	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xinput_host.cpp:323:13:void config_driver_mount_complete(uint8_t, uint8_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xinput_host.cpp:91:9:uint8_t tuh_xinput_instance_count(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xinput_host.cpp:95:6:bool tuh_xinput_mounted(uint8_t, uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xinput_host.cpp:105:6:bool tuh_xinput_receive_report(uint8_t, uint8_t)	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xinput_host.cpp:119:6:bool tuh_xinput_receive_vendor_report(uint8_t, uint8_t, uint8_t, uint16_t, uint8_t, uint16_t, uint8_t*)	64	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xinput_host.cpp:142:6:bool tuh_xinput_send_report(uint8_t, uint8_t, const uint8_t*, uint16_t)	56	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xinput_host.cpp:166:6:bool tuh_xinput_send_vendor_report(uint8_t, uint8_t, uint8_t, uint16_t, uint8_t, uint16_t, uint8_t*)	64	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xinput_host.cpp:188:6:bool tuh_xinput_ready(uint8_t, uint8_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xinput_host.cpp:198:6:bool xinputh_init()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xinput_host.cpp:203:6:bool xinputh_xfer_cb(uint8_t, uint8_t, xfer_result_t, uint32_t)	40	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xinput_host.cpp:223:6:void xinputh_close(uint8_t)	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xinput_host.cpp:233:6:bool xinputh_open(uint8_t, uint8_t, const tusb_desc_interface_t*, uint16_t)	40	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/shared/xinput_host.cpp:317:6:bool xinputh_set_config(uint8_t, uint8_t)	8	static

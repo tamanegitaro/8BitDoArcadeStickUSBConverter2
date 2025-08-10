@@ -1,0 +1,17 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/host/hub.c:481:13:connection_port_reset_complete	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/host/hub.c:86:6:hub_port_clear_feature	56	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/host/hub.c:381:13:hub_get_status_complete	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/host/hub.c:118:6:hub_port_set_feature	56	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/host/hub.c:451:13:connection_clear_conn_change_complete	40	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/host/hub.c:284:13:config_set_port_power	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/host/hub.c:302:13:config_port_power_complete	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/host/hub.c:150:6:hub_port_get_status	56	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/host/hub.c:185:6:hub_init	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/host/hub.c:190:6:hub_deinit	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/host/hub.c:194:6:hub_open	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/host/hub.c:224:6:hub_close	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/host/hub.c:235:6:hub_edpt_status_xfer	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/host/hub.c:404:13:hub_port_get_status_complete	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/host/hub.c:375:13:hub_clear_feature_complete_stub	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/host/hub.c:249:6:hub_set_config	48	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/host/hub.c:334:6:hub_xfer_cb	24	static

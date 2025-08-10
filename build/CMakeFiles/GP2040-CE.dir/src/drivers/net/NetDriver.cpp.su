@@ -1,0 +1,14 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/net/NetDriver.h:15:18:virtual void NetDriver::initializeAux()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/net/NetDriver.h:16:18:virtual void NetDriver::processAux()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/net/NetDriver.h:26:27:virtual USBListener* NetDriver::get_usb_auth_listener()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/net/NetDriver.cpp:68:10:virtual uint16_t NetDriver::get_report(uint8_t, hid_report_type_t, uint8_t*, uint16_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/net/NetDriver.cpp:73:6:virtual void NetDriver::set_report(uint8_t, hid_report_type_t, const uint8_t*, uint16_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/net/NetDriver.cpp:76:6:virtual bool NetDriver::vendor_control_xfer_cb(uint8_t, uint8_t, const tusb_control_request_t*)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/net/NetDriver.cpp:158:17:virtual const uint8_t* NetDriver::get_descriptor_device_cb()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/net/NetDriver.cpp:162:17:virtual const uint8_t* NetDriver::get_hid_descriptor_report_cb(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/net/NetDriver.cpp:241:17:virtual const uint8_t* NetDriver::get_descriptor_configuration_cb(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/net/NetDriver.cpp:245:17:virtual const uint8_t* NetDriver::get_descriptor_device_qualifier_cb()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/net/NetDriver.cpp:249:10:virtual uint16_t NetDriver::GetJoystickMidValue()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/net/NetDriver.cpp:45:6:virtual void NetDriver::initialize()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/net/NetDriver.cpp:62:6:virtual bool NetDriver::process(Gamepad*)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/net/NetDriver.cpp:93:18:virtual const uint16_t* NetDriver::get_descriptor_string_cb(uint8_t, uint16_t)	16	static

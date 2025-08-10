@@ -1,0 +1,20 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/gamepad_usb_host_listener.h:210:22:virtual void GamepadUSBHostListener::xmount(uint8_t, uint8_t, uint8_t, uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/gamepad_usb_host_listener.h:213:22:virtual void GamepadUSBHostListener::report_sent(uint8_t, uint8_t, const uint8_t*, uint16_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/gamepad_usb_host_listener.h:214:22:virtual void GamepadUSBHostListener::set_report_complete(uint8_t, uint8_t, uint8_t, uint8_t, uint16_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/addons/gamepad_usb_host_listener.h:215:22:virtual void GamepadUSBHostListener::get_report_complete(uint8_t, uint8_t, uint8_t, uint8_t, uint16_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/gamepad_usb_host_listener.cpp:65:6:virtual void GamepadUSBHostListener::unmount(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/gamepad_usb_host_listener.cpp:59:6:virtual void GamepadUSBHostListener::mount(uint8_t, uint8_t, const uint8_t*, uint16_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/gamepad_usb_host_listener.cpp:300:1:void __static_initialization_and_destruction_0(int, int)	112	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/gamepad_usb_host_listener.cpp:36:6:virtual void GamepadUSBHostListener::setup()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/gamepad_usb_host_listener.cpp:44:6:void GamepadUSBHostListener::process()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/gamepad_usb_host_listener.cpp:114:10:uint16_t GamepadUSBHostListener::map(uint8_t, uint8_t, uint8_t, uint16_t, uint16_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/gamepad_usb_host_listener.cpp:120:6:bool GamepadUSBHostListener::diff_than_2(uint8_t, uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/gamepad_usb_host_listener.cpp:125:6:bool GamepadUSBHostListener::diff_report(const dualshock4_t*, const dualshock4_t*)	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/gamepad_usb_host_listener.cpp:140:6:void GamepadUSBHostListener::process_hotkey(uint32_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/gamepad_usb_host_listener.cpp:182:6:void GamepadUSBHostListener::process_8bitdoarcade(const uint8_t*)	96	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/gamepad_usb_host_listener.cpp:228:6:void GamepadUSBHostListener::process_egret2minipanel(const uint8_t*)	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/gamepad_usb_host_listener.cpp:252:6:void GamepadUSBHostListener::process_cyberstickusb(const uint8_t*)	40	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/gamepad_usb_host_listener.cpp:84:6:void GamepadUSBHostListener::process_ctrlr_report(uint8_t, const uint8_t*, uint16_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/gamepad_usb_host_listener.cpp:71:6:virtual void GamepadUSBHostListener::report_received(uint8_t, uint8_t, const uint8_t*, uint16_t)	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/gamepad_usb_host_listener.cpp:300:1:cpp)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/addons/gamepad_usb_host_listener.cpp:300:1:cpp)	8	static

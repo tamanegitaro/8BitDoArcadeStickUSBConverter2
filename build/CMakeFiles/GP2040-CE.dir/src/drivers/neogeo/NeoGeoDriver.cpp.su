@@ -1,0 +1,15 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/neogeo/NeoGeoDriver.h:16:18:virtual void NeoGeoDriver::initializeAux()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/neogeo/NeoGeoDriver.h:17:18:virtual void NeoGeoDriver::processAux()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/neogeo/NeoGeoDriver.h:27:27:virtual USBListener* NeoGeoDriver::get_usb_auth_listener()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/neogeo/NeoGeoDriver.cpp:4:6:virtual void NeoGeoDriver::initialize()	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/neogeo/NeoGeoDriver.cpp:109:6:virtual void NeoGeoDriver::set_report(uint8_t, hid_report_type_t, const uint8_t*, uint16_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/neogeo/NeoGeoDriver.cpp:112:6:virtual bool NeoGeoDriver::vendor_control_xfer_cb(uint8_t, uint8_t, const tusb_control_request_t*)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/neogeo/NeoGeoDriver.cpp:121:17:virtual const uint8_t* NeoGeoDriver::get_descriptor_device_cb()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/neogeo/NeoGeoDriver.cpp:125:17:virtual const uint8_t* NeoGeoDriver::get_hid_descriptor_report_cb(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/neogeo/NeoGeoDriver.cpp:129:17:virtual const uint8_t* NeoGeoDriver::get_descriptor_configuration_cb(uint8_t)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/neogeo/NeoGeoDriver.cpp:133:17:virtual const uint8_t* NeoGeoDriver::get_descriptor_device_qualifier_cb()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/neogeo/NeoGeoDriver.cpp:137:10:virtual uint16_t NeoGeoDriver::GetJoystickMidValue()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/neogeo/NeoGeoDriver.cpp:103:10:virtual uint16_t NeoGeoDriver::get_report(uint8_t, hid_report_type_t, uint8_t*, uint16_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/neogeo/NeoGeoDriver.cpp:41:6:virtual bool NeoGeoDriver::process(Gamepad*)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/drivers/shared/driverhelper.h:4:19:uint16_t* getStringDescriptor(const char*, uint8_t)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/drivers/neogeo/NeoGeoDriver.cpp:116:18:virtual const uint16_t* NeoGeoDriver::get_descriptor_string_cb(uint8_t, uint16_t)	8	static

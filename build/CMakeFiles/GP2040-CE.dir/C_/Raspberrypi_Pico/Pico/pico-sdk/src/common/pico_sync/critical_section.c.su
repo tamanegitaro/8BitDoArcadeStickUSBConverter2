@@ -1,0 +1,3 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/common/pico_sync/critical_section.c:17:6:critical_section_init_with_lock_num	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/common/pico_sync/critical_section.c:13:6:critical_section_init	8	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/common/pico_sync/critical_section.c:22:6:critical_section_deinit	8	static

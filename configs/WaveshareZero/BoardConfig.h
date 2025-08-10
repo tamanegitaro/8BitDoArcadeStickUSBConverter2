@@ -54,4 +54,9 @@
 #define KEY_BUTTON_A2   HID_KEY_F2            // A2     | ~      | Capture | ~        | 14     | ~      |
 #define KEY_BUTTON_FN   -1                    // Hotkey Function                                        |
 
+#define HAS_I2C_DISPLAY 1
+#define I2C0_ENABLED 1
+#define USB_PERIPHERAL_ENABLED 1
+#define GAMEPAD_USB_HOST_ENABLED 1
+
 #endif

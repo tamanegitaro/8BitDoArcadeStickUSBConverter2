@@ -1,0 +1,9 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad/GamepadState.cpp:5:10:uint16_t dpadToAnalogX(uint8_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad/GamepadState.cpp:24:10:uint16_t dpadToAnalogY(uint8_t)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad/GamepadState.cpp:42:9:uint8_t getMaskFromDirection(DpadDirection)	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad/GamepadState.cpp:100:9:uint8_t runSOCDCleaner(SOCDMode, uint8_t)	8	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\list.tcc:331:5:std::__cxx11::list<_Tp, _Alloc>::__remove_return_type std::__cxx11::list<_Tp, _Alloc>::remove(const value_type&) [with _Tp = DpadDirection; _Alloc = std::allocator<DpadDirection>]	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad/GamepadState.cpp:47:9:uint8_t updateDpad(uint8_t, DpadDirection)	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad/GamepadState.cpp:85:9:uint8_t filterToFourWayMode(uint8_t)	8	static
+c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\list.tcc:66:5:void std::__cxx11::_List_base<_Tp, _Alloc>::_M_clear() [with _Tp = DpadDirection; _Alloc = std::allocator<DpadDirection>]	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad/GamepadState.cpp:50:29:void __tcf_0()	8	static

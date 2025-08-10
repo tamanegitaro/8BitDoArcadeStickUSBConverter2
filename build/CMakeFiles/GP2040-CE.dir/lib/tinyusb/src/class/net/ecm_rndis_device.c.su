@@ -1,0 +1,13 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/class/net/ecm_rndis_device.c:117:13:do_in_xfer	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/class/net/ecm_rndis_device.c:112:6:tud_network_recv_renew	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/class/net/ecm_rndis_device.c:357:13:handle_incoming_packet	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/class/net/ecm_rndis_device.c:123:6:netd_report	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/class/net/ecm_rndis_device.c:235:13:ecm_report	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/class/net/ecm_rndis_device.c:135:6:netd_init	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/class/net/ecm_rndis_device.c:139:6:netd_deinit	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/class/net/ecm_rndis_device.c:143:6:netd_reset	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/class/net/ecm_rndis_device.c:150:10:netd_open	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/class/net/ecm_rndis_device.c:245:6:netd_control_xfer_cb	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/class/net/ecm_rndis_device.c:385:6:netd_xfer_cb	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/class/net/ecm_rndis_device.c:420:6:tud_network_can_xmit	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/lib/tinyusb/src/class/net/ecm_rndis_device.c:427:6:tud_network_xmit	16	static

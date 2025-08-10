@@ -1,0 +1,25 @@
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPEvent.h:9:17:GPEvent::~GPEvent()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPEvent.h:11:29:virtual GPEventType GPEvent::eventType()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPMenuNavigateEvent.h:12:17:GPMenuNavigateEvent::~GPMenuNavigateEvent()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPMenuNavigateEvent.h:14:21:virtual GPEventType GPMenuNavigateEvent::eventType()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPStorageSaveEvent.h:13:17:GPStorageSaveEvent::~GPStorageSaveEvent()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPStorageSaveEvent.h:15:21:virtual GPEventType GPStorageSaveEvent::eventType()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad.cpp:89:41:Gamepad::setup()::<lambda(GpioMappingInfo, int32_t)>	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPMenuNavigateEvent.h:12:17:virtual GPMenuNavigateEvent::~GPMenuNavigateEvent()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPEvent.h:9:17:virtual GPEvent::~GPEvent()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/events/GPStorageSaveEvent.h:13:17:virtual GPStorageSaveEvent::~GPStorageSaveEvent()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/headers/eventmanager.h:35:33:void __tcf_0()	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad.cpp:704:1:void __static_initialization_and_destruction_0(int, int)	112	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad.cpp:20:10:uint32_t getMillis()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad.cpp:24:10:uint64_t getMicro()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad.cpp:28:1:Gamepad::Gamepad()	32	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad.cpp:34:6:void Gamepad::setup()	64	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad.cpp:193:6:void Gamepad::reinit()	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad.cpp:249:6:void Gamepad::process()	24	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad.cpp:318:6:void Gamepad::read()	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad.cpp:432:6:void Gamepad::clearState()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad.cpp:444:6:void Gamepad::clearRumbleState()	0	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad.cpp:458:6:void Gamepad::processHotkeyAction(GamepadHotkey)	16	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad.cpp:415:6:void Gamepad::hotkey()	48	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad.cpp:704:1:cpp)	8	static
+C:/Raspberrypi_Pico/GP2040-CE-0.7.11_8BitDo5/8BitDoArcadeStickUSBConverter2/src/gamepad.cpp:704:1:cpp)	8	static

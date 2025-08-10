@@ -1,0 +1,6 @@
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c:9:10:hw_claim_lock	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c:13:6:hw_claim_unlock	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c:17:13:hw_is_claimed	0	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c:21:6:hw_claim_or_assert	24	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c:31:5:hw_claim_unused_from_range	32	static
+C:/Raspberrypi_Pico/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c:49:6:hw_claim_clear	16	static
