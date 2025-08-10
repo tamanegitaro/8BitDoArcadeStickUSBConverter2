@@ -36,10 +36,10 @@ You can connect your compatible controllers to Nintendo Switch, PS4, Egret II mi
 - Nintendo Switch
 - PS3
 - Keyboard
-- PS4*
-- PS5*
-- Xbox One*
-- Original Xbox*
+- PS4 *Require Authentication Device
+- PS5 *Require Authentication Device
+- Xbox One *Require Authentication Device
+- Original Xbox *Require Authentication Device
 - Sega Genesis
 - Megadrive Mini
 - NEOGEO mini
@@ -50,7 +50,6 @@ You can connect your compatible controllers to Nintendo Switch, PS4, Egret II mi
 - ASTROCITY Mini
 - ASTROCITY Mini V
 - Playstation Classic
-*Require Authentication Device
 
 ## How to use
 - Connect 8BitDo arcade stick 2.4G USB dongle or other USB controller to 8BitDo Arcade Stick USB Converter.
