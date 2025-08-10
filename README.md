@@ -161,7 +161,7 @@ Use 4 screws and finish build.
 
 ## How to change Pin mapping
 - Open configuration - Pin mapping
-- Delete all pin configurations as below and make sure to click save
+<img width="1919" height="1012" alt="image" src="https://github.com/user-attachments/assets/f3657a64-f232-4ae9-af5f-fb67b2db22ac" />
 
 ## **************************************************
 ## **************************************************
