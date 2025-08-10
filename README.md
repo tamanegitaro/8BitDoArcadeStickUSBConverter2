@@ -79,6 +79,9 @@ Pin mapping of controllers are shown as follows. Button name in parentheses is d
 <img width="1330" height="745" alt="image" src="https://github.com/user-attachments/assets/65c898f1-73d5-437a-9b9c-75fb977d1911" />
 <img width="1330" height="745" alt="image" src="https://github.com/user-attachments/assets/21874720-5e3e-4696-ac6d-bc00a14df274" />
 
+<img width="1046" height="913" alt="image" src="https://github.com/user-attachments/assets/d96b615a-1037-4bd1-a6f8-408739ade29d" />
+<img width="1097" height="944" alt="image" src="https://github.com/user-attachments/assets/684318e1-5f5a-42dc-b0a2-73f1380b90e9" />
+
 For Cyberstick, you can swap Left Stick and Right Lever. Also able to invert Y axis for both Left Lever and Right Stick in addon configuration.
 <img width="1697" height="640" alt="image" src="https://github.com/user-attachments/assets/9547a3c3-c892-4b8b-82dc-e8fdba1dca2f" />
 
