@@ -66,8 +66,16 @@ FAQ:
 - Connect your controller to your PC by this USB converter.
 - Hold S1 + B3 + B4 of your controller for 5 seconds and USB converter will enter webconfig mode.
 - Open http://192.168.7.1/
-- In webconfiguration, you can change your compatible console, pin mappings, display configuration and so on.
+- In webconfiguration, you can change compatible console, pin mappings, display configuration and so on.
+
+## How to change compatible console in webconfig
 - 
+## How to set hotkeys
+- You can use button combination to push button that is not available in your controller.
+- For example, press Home button + R2 = R3 button
+- To configure hotkeys, you can use webconfig
+- 
+
 ## How to change pin mappings in webconfig
 In Web configuration - GPIO Pin mapping configuration, you can change pin mappings. Connect USB Converter to PC, set USB Converter mode to WebConfig mode, and open http://192.168.7.1/ in Browser. You should be able to find following pin mapping configuration window.
 
@@ -83,8 +91,6 @@ Pin mapping of controllers are shown as follows. Button name in parentheses is d
 
 For Cyberstick, you can swap Left Stick and Right Lever. Also able to invert Y axis for both Left Lever and Right Stick in addon configuration.
 <img width="1697" height="640" alt="image" src="https://github.com/user-attachments/assets/9547a3c3-c892-4b8b-82dc-e8fdba1dca2f" />
-
-## How to change game mode in webconfig
 
 ## How to change game mode mapping in webconfig
 In 8BitDo Arcade stick and Egret II mini Control panel, you can change game mode by pressing button combination. To change game mode, Hold A1 + S1 + S2 and push button below.
