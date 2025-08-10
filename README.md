@@ -19,14 +19,17 @@
 ## This project is Arcade Stick USB Converter 2 based on GP2040-CE.
 You can connect your compatible device to Nintendo Switch, PS4, Egret II mini, Astrocity mini, Genesis mini and so on using this converter.
 
-![GdE4uBRagAAjrmu](https://github.com/user-attachments/assets/8f999c09-cf4b-4efe-b427-e4e0749cce39)
-
 ![GdE4uBPbsAAGPY7](https://github.com/user-attachments/assets/d93dedf1-becc-4b35-97bc-2e24a5b67b70)
 
 ## Compatible controllers
 - 8BitDo Arcade Stick
+<img width="767" height="501" alt="image" src="https://github.com/user-attachments/assets/8bf8ac42-635d-47a5-aaa5-58501682d550" />
+
 - Cyber Stick USB
+<img width="1109" height="726" alt="image" src="https://github.com/user-attachments/assets/c55b3c48-67e0-493a-b659-04263f493dc7" />
+
 - Egret II mini Control panel
+<img width="1035" height="742" alt="image" src="https://github.com/user-attachments/assets/a561044f-e041-4b17-addb-9a0aa53a9c96" />
 
 ## How to use
 - Connect 8BitDo arcade stick 2.4G USB dongle or other USB device to 8BitDo Arcade Stick USB Converter.
