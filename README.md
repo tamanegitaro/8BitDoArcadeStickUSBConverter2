@@ -138,12 +138,21 @@ FAQ:
 - In webconfiguration, you can change compatible console, pin mappings, display configuration and so on.
 
 ## How to change compatible console in webconfig
-- 
-## How to set hotkeys
+- In web configuration mode, open Settings - Input Mode Settings
+- You can choose current input mode from list
+- Make sure to save after changing configuration
+
+<img width="1919" height="794" alt="image" src="https://github.com/user-attachments/assets/5c4e083c-e43d-472f-a2b3-48013a639439" />
+
+## How to set hotkeys in webconfig
 - You can use button combination to push button that is not available in your controller.
-- For example, press Home button + R2 = R3 button
-- To configure hotkeys, you can use webconfig
-- 
+- For example, press Home button + R2 will become R3 button when hotkey is active
+- To configure hotkeys, open Settings - Hotkey settings in Webconfig
+- You can choose key combination in this configuration window
+- You can also set Fn to one of your button in pin settings and use Fn button for Hotkey.
+
+<img width="1916" height="778" alt="image" src="https://github.com/user-attachments/assets/6802266a-e198-452f-a3d5-3e8e6e4637de" />
+
 
 ## How to change pin mappings in webconfig
 In Web configuration - GPIO Pin mapping configuration, you can change pin mappings. Connect USB Converter to PC, set USB Converter mode to WebConfig mode, and open http://192.168.7.1/ in Browser. You should be able to find following pin mapping configuration window.
