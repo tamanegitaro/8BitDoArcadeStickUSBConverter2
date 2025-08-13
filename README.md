@@ -51,6 +51,75 @@ You can connect your compatible controllers to Nintendo Switch, PS4, Egret II mi
 - ASTROCITY Mini V
 - Playstation Classic
 
+***************************************
+
+## How to build your hardware
+## Parts
+- RP2040-Zero * 1
+https://ja.aliexpress.com/item/1005007393402333.html
+- 1.3" OLED Display Module SH1106 128X64 * 1 (Optional)
+https://ja.aliexpress.com/item/1005005967766159.html
+- USB A Type Standard Port Female PCB Mount Socket Connector Right Angle 4 Pin
+https://ja.aliexpress.com/item/1005004572352605.html
+- 1206 SMD PTC Resettable fuse 500MA 0.5A * 1 (Optional)
+https://ja.aliexpress.com/item/1005004844581464.html
+- 1206 Resistor 22ohm * 2 (Optional)
+https://ja.aliexpress.com/item/32996310793.html
+- Some wires
+- M3 Nylon screws nuts set (Optional)
+	- nuts * 4
+	- 6mm screws * 4
+	- 6mm/10mm male spacer * 4
+
+https://amzn.asia/d/cy7spRY
+
+![image](https://github.com/user-attachments/assets/bf3f8d46-e889-42cc-a2ff-971c7e933b27)
+![image](https://github.com/user-attachments/assets/5368e390-aff6-470b-a425-a2c49e8c6c9d)
+
+- Order PCB of GP2040-CE USB Converter 2.0 (Optional)
+
+You can order PCB from elecrow - PCB Fab - Regular PCB(Online order)
+https://www.elecrow.com/pcb-manufacturing.html?from=nav/
+
+Download gerber/gerber.zip and upload it in elecrow PCB online order website.
+Choose your favorite color for your PCB board. Choosing Lead free is optional(Good for your health for extra $2).
+
+![image](https://github.com/user-attachments/assets/587bb9d1-a64b-44cc-9c59-435bd8d2bb5e)
+![image](https://github.com/user-attachments/assets/b81fccfb-73cd-471a-a642-94ddcbabce0a)
+
+Schematic is like this:
+<img width="864" height="806" alt="image" src="https://github.com/user-attachments/assets/cf7a5594-4cc1-47ce-aa80-afc7638ba635" />
+
+## Instruction to build USB converter(Minimum hardware)
+You can just get RP2040-Zero and USB A Type Standard Port Femaile PCB Mount Socket. Connect those two like this:
+<img width="372" height="545" alt="image" src="https://github.com/user-attachments/assets/4bc23e43-c918-4686-8887-6953398dedfe" />
+Now, move on to "How to setup firmware" section.
+
+## Instruction to build USB converter(With display)
+Connect everything like this. Connect USB socket, RP2040-Zero and OLED.
+![image](https://github.com/user-attachments/assets/4e1ea4ec-117e-4953-947c-8ed4af18fa94)
+
+Connect 2 22ohm registors and resettable fuse
+![image](https://github.com/user-attachments/assets/19cc8427-b826-4b32-990f-3c574c0c0219)
+
+Use 4 screws and finish build.
+![GdE4uBPbsAAGPY7](https://github.com/user-attachments/assets/d93dedf1-becc-4b35-97bc-2e24a5b67b70)
+
+## How to setup firmware
+- Download build/GP2040-CE_0.7.11_WaveshareZero.uf2 from this repository.
+
+- From GP2040-CE Releases, download flash_nuke.uf2
+[https://github.com/OpenStickCommunity/GP2040-CE](https://github.com/OpenStickCommunity/GP2040-CE/releases)
+
+- Hold BOOT button on RP2040-Zero and connect converter to your PC
+![image](https://github.com/user-attachments/assets/a7470a09-87fc-4a4f-8a5c-6625e546146e)
+
+- RPI-RP2 storage will be recognized(Bootsel mode). Copy flash_nuke.uf2 in RPI-RP2. This will initialize your RP2040-Zero.
+- RPI-RP2 storage will open again after initialization is completed. Copy GP2040-CE_0.7.10_WaveshareZero.uf2.
+- Once copy is completed, disconnect USB converter and done!
+
+***************************************
+
 ## How to use
 - Connect 8BitDo arcade stick 2.4G USB dongle or other USB controller to 8BitDo Arcade Stick USB Converter.
 - Connect USB Converter to console.
@@ -121,70 +190,10 @@ If you do not want to change mode by button combination, set "No Mode Selected" 
 ## Known issue
 - After changing game mode, sometimes need to reboot USB converter and 8BitDo arcade stick to get it recognized.
 
-## Parts
-- RP2040-Zero * 1
-https://ja.aliexpress.com/item/1005007393402333.html
-- 1.3" OLED Display Module SH1106 128X64 * 1
-https://ja.aliexpress.com/item/1005005967766159.html
-- USB A Type Standard Port Female PCB Mount Socket Connector Right Angle 4 Pin
-https://ja.aliexpress.com/item/1005004572352605.html
-- 1206 SMD PTC Resettable fuse 500MA 0.5A * 1
-https://ja.aliexpress.com/item/1005004844581464.html
-- 1206 Resistor 22ohm * 2
-https://ja.aliexpress.com/item/32996310793.html
-- Some wires
-- M3 Nylon screws nuts set
-	- nuts * 4
-	- 6mm screws * 4
-	- 6mm/10mm male spacer * 4
-
-https://amzn.asia/d/cy7spRY
-
-![image](https://github.com/user-attachments/assets/bf3f8d46-e889-42cc-a2ff-971c7e933b27)
-![image](https://github.com/user-attachments/assets/5368e390-aff6-470b-a425-a2c49e8c6c9d)
-
-- PCB of GP2040-CE USB Converter 2.0
-
-You can order PCB from elecrow - PCB Fab - Regular PCB(Online order)
-https://www.elecrow.com/pcb-manufacturing.html?from=nav/
-
-Download gerber/gerber.zip and upload it in elecrow PCB online order website.
-Choose your favorite color for your PCB board. Choosing Lead free is optional(Good for your health for extra $2).
-
-![image](https://github.com/user-attachments/assets/587bb9d1-a64b-44cc-9c59-435bd8d2bb5e)
-![image](https://github.com/user-attachments/assets/b81fccfb-73cd-471a-a642-94ddcbabce0a)
-
-Schematic is like this:
-<img width="864" height="806" alt="image" src="https://github.com/user-attachments/assets/cf7a5594-4cc1-47ce-aa80-afc7638ba635" />
-
-## Instruction to build USB converter
-Connect everything like this. Connect RP2040-Zero and OLED.
-![image](https://github.com/user-attachments/assets/4e1ea4ec-117e-4953-947c-8ed4af18fa94)
-
-Connect 2 22ohm registors and resettable fuse
-![image](https://github.com/user-attachments/assets/19cc8427-b826-4b32-990f-3c574c0c0219)
-
-Use 4 screws and finish build.
-![GdE4uBPbsAAGPY7](https://github.com/user-attachments/assets/d93dedf1-becc-4b35-97bc-2e24a5b67b70)
-
-## How to configure
-- Download build/GP2040-CE_0.7.11_WaveshareZero.uf2 from this repository.
-
-- From GP2040-CE Releases, download flash_nuke.uf2 and force_webconfig.uf2
-[https://github.com/OpenStickCommunity/GP2040-CE](https://github.com/OpenStickCommunity/GP2040-CE/releases)
-
-- Hold BOOT button on RP2040-Zero and connect converter to your PC
-
-![image](https://github.com/user-attachments/assets/a7470a09-87fc-4a4f-8a5c-6625e546146e)
-
-- RPI-RP2 storage will be recognized(Bootsel mode). Copy flash_nuke.uf2 in RPI-RP2. This will initialize your RP2040 Zero.
-- RPI-RP2 storage will open again after initialization is completed. Copy GP2040-CE_0.7.10_WaveshareZero.uf2.
-- Once copy is completed, disconnect USB converter and finished!
-
-
-***************************************
-#FAQ
+## FAQ
 ## How to manually enter webconfig mode without connecting USB controller instead of pressing S2 + B3 + B4 for 5 seconds
+- From GP2040-CE Releases, download force_webconfig.uf2
+[https://github.com/OpenStickCommunity/GP2040-CE](https://github.com/OpenStickCommunity/GP2040-CE/releases)
 - Hold BOOT button on RP2040-Zero and connect converter to your PC
 - RPI-RP2 storage will be recognized(Bootsel mode). Copy force_webconfig.uf2 in RPI-RP2. This will force USB converter to be in webconfig mode.
 - After copy is completed, open web browser in your PC and open http://192.168.7.1
