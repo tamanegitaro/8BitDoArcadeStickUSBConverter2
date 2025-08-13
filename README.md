@@ -154,6 +154,9 @@ Choose your favorite color for your PCB board. Choosing Lead free is optional(Go
 ![image](https://github.com/user-attachments/assets/587bb9d1-a64b-44cc-9c59-435bd8d2bb5e)
 ![image](https://github.com/user-attachments/assets/b81fccfb-73cd-471a-a642-94ddcbabce0a)
 
+Schematic is like this:
+<img width="864" height="806" alt="image" src="https://github.com/user-attachments/assets/cf7a5594-4cc1-47ce-aa80-afc7638ba635" />
+
 ## Instruction to build USB converter
 Connect everything like this. Connect RP2040-Zero and OLED.
 ![image](https://github.com/user-attachments/assets/4e1ea4ec-117e-4953-947c-8ed4af18fa94)
